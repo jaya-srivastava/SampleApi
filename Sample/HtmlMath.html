@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Sample Html File</title>
+    <!--config=TeX-AMS-MML_HTMLorMML -->
+    <script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML">
+
+        MathJax.Menu = null;
+
+        MathJax.Hub.Config({
+            config: ["MMLorHTML.js"],
+            jax: ["input/AsciiMath", "output/HTML-CSS", "output/NativeMML"],
+            extensions: ["asciimath2jax.js", "MathMenu.js", "MathZoom.js"]
+        });
+   
+   </script>
+</head>
+<body>
+    <p>
+    This is a sample Test file to make sure if Website is up and running or not.
+    This file can be borwsed from IIS by rigt clicking the "Browse" on this file from content Tab.
+
+</p>
+<p>
+
+  <!--pinging url   http://www.google.com/webmasters/sitemaps/ping?sitemap=http://www.website.com/sitemap.xml
+http://search.yahooapis.com/SiteExplorerService/V1/updateNotification?appid=YahooDemo&url=http://www.website.com/sitemap.xml
+http://submissions.ask.com/ping?sitemap=http://www.website.com/sitemap.xml
+
+    -->
+</p>
+
+<p>
+    Let's try to convert x to better looking: <span class="MathJax_Math-italic">x</span>
+</p>
+
+ <p>
+     <span>Times:</span><span>\times</span><span>a \times b</span>
+ </p>
+  <p>
+     <span>Times:</span><span>&times;</span><span>a &times; b</span>
+ </p>
+    <p>
+     <span>Times:</span><span>'x'  </span><span>a `x` b</span>
+ </p>
+    <p>
+     <span>Dot Oprator:</span><span>.</span><span>a . b</span>
+ </p>
+
+<p>
+When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+</p>
+
+<p>\[
+  1 +  \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots =
+    \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})},
+     \quad\quad \text{for $|q|<1$}.
+\]</p>
+
+
+    <p>
+    \left [ - \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial x^2} + V \right ] \Psi
+= i \hbar \frac{\partial}{\partial t} \Psi
+    </p>
+</body>
+</html>

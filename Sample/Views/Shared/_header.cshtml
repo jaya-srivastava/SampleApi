@@ -1,0 +1,89 @@
+﻿<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="iPracticeMath.com" />
+<meta name="robots" content="index, follow" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="@ViewBag.MetaDescription" />
+<meta name="keywords" content="@ViewBag.Keywords" />
+    @{
+        ViewBag.TwitterSite = "@iPracticeMath";
+
+        var context = HttpContext.Current;
+        var url = string.Format("{0}://{1}{2}{3}",
+                                        context.Request.Url.Scheme,
+                                        context.Request.Url.Host,
+                                        context.Request.Url.Port == 80
+                                            ? string.Empty
+                                            : ":" + context.Request.Url.Port,
+                                        context.Request.ApplicationPath); 
+    }
+    @if (String.IsNullOrWhiteSpace(ViewBag.FacebookUrl))
+    {
+        ViewBag.FacebookUrl = ViewBag.FacebookUrl ?? context.Request.Url.ToString();
+    }
+    else
+    {
+        ViewBag.FacebookUrl = @url + ViewBag.FacebookUrl;
+    }
+    
+    @if (!String.IsNullOrWhiteSpace(ViewBag.CanonicalHomeUrl))
+    { 
+        <link rel="canonical" href="@ViewBag.CanonicalHomeUrl.ToString().ToLowerInvariant()" />
+    }
+    else if (!String.IsNullOrWhiteSpace(ViewBag.CanonicalUrl))   
+    { 
+        <!--ViewBag.CanonicalUrl is added in few cases - in question and actual worksheet page-->
+        <link rel="canonical" href="@url@ViewBag.CanonicalUrl.ToString().ToLowerInvariant()" />
+    }    
+    else
+    {
+        ViewBag.CanonicalUrl = Request.QueryString.Count == 0 ? HttpContext.Current.Request.Url.ToString().ToLowerInvariant() : "";
+        if (!String.IsNullOrWhiteSpace(ViewBag.CanonicalUrl))
+        {        
+            <link rel="canonical" href="@ViewBag.CanonicalUrl" />
+        }
+    }
+
+<meta property="og:title" content="@ViewBag.Title" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="iPracticeMath" />
+<meta property="og:description" content="@ViewBag.MetaDescription" />
+<meta property="og:url" content="@ViewBag.FacebookUrl" />
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@ViewBag.TwitterSite" />
+<meta name="twitter:url" content="@ViewBag.FacebookUrl">
+<meta name="twitter:title" content="@ViewBag.Title">
+<meta name="twitter:description" content="@ViewBag.MetaDescription">
+
+<meta itemprop="name" content="@ViewBag.Title">
+<meta itemprop="description" content="@ViewBag.MetaDescription">
+
+<script src='@Scripts.Url("~/scripts/modernizr")' async type="text/javascript"></script>
+@{
+    if (!String.IsNullOrWhiteSpace(ViewBag.IsHome) && ViewBag.IsHome=="true")
+  { 
+        @Styles.Render("~/content/css/homestyle")
+        //@Styles.Render("~/scripts/homejs")
+  }
+else
+{     
+        @Styles.Render("~/content/css/stylecss")
+}
+}
+
+@*<script src='~/Scripts/iPracticeScripts.js' async type="text/javascript"></script>*@
+
+<script type="text/javascript">
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-31190584-1', 'auto'); // Replace with your property ID.
+    ga('require', 'linkid');
+    ga('send', 'pageview');
+
+</script>

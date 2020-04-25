@@ -1,0 +1,56 @@
+﻿@using DevTrends.MvcDonutCaching;
+@{
+    bool IsVisible = @ViewBag.IsVisible ?? false;
+}
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"><link rel="stylesheet" type="text/css" href="~/Content/css/ie8.css" media="screen" /><![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"><link rel="stylesheet" type="text/css" href="~/Content/css/ie8.css" media="screen" /> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"><link rel="stylesheet" type="text/css" href="~/Content/css/ie8.css" media="screen" /><![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" class="no-js" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"
+itemscope itemtype="http://schema.org/WebPage">
+<!--<![endif]-->
+<head>
+    
+    @{
+        ViewBag.MetaDescription = ViewBag.MetaDescription ?? "Web-base tool for math-practice, worksheet and learning lession on maths from Grade 1 to Grade 9 students Algebra, word problems, Worksheets etc.";       
+        ViewBag.Keywords = ViewBag.Keywords ?? "Learn, Practice Math, Grade1, Grade2, Grade3, Grade4, Grade5, Algebra, Addition, subtraction, Multiply, Division, Fraction, Decimal, Worksheet, Reports";
+        ViewBag.Title = ViewBag.Title ?? "Math Practice, Worksheet and Lesson plan for K-12 Students";
+        ViewBag.TwitterSite = "@iPracticeMath";
+    }
+    <title>@ViewBag.Title</title>
+    @Html.Partial("_header")
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+    @Html.Partial("_menuBarCommonPartial")    
+    <div id="mainContainer" class="container">
+        @if (IsVisible == true)
+        {
+            @Html.Action("AccountVerificationPartial", "Membership")
+        }
+        @RenderBody()        
+        <div class="row">
+            <br />
+            <br />
+            <br />
+            <br />
+        </div>
+    </div>
+    <div id="searchResult" class="container">
+    </div>
+   
+
+    <script src='@Scripts.Url("~/scripts/jquery")' type="text/javascript" ></script>
+    <script src='@Scripts.Url("~/scripts/a")' type="text/javascript" ></script>
+    <script src='@Scripts.Url("~/scripts/katex")' type="text/javascript"></script>
+    @Styles.Render("~/content/css/katexcss")    
+    <script src='@Scripts.Url("~/scripts/canvas")' type="text/javascript"></script>
+
+    @RenderSection("scripts", required: false)      
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-513cc8d265029c37" async="async"></script>
+    <!--Google Custom Search-->    
+    <link rel="stylesheet" href="~/content/css/print.css" type="text/css" media="print">        
+</body>
+</html>

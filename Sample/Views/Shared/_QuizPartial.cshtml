@@ -1,0 +1,15 @@
+﻿@model Sample.Models.DTO.UserDto
+@using iPractice.Helpers
+
+@if (Model != null && Request.IsAuthenticated)
+{
+    if (Model.RoleId == 1)
+    {
+        <li>@Html.ActionLink("Quiz", "QuizList", "Quiz", new { area = "" }, new { @class = "quiz", role = "button", data_toggle = "" })</li>
+
+    }
+    else
+    {
+        <li>@Html.ActionLink("Quiz", "CreateQuiz", "Quiz", new { area = "" }, new { @class = "quiz", role = "button", data_toggle = "" })</li>
+    }    
+}

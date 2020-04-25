@@ -1,0 +1,61 @@
+﻿@using DevTrends.MvcDonutCaching;
+
+@{
+    string logoUrl = "";
+    if (!string.IsNullOrWhiteSpace(@ViewBag.LearnCdnURL))
+    { logoUrl = @ViewBag.LearnCdnURL + "/content/images/logo.png";}
+    else
+    { logoUrl = "/content/images/logo.png"; }
+}
+
+<div class="topbar">
+    <div class="container">
+        <!-- Topbar Navigation -->
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="loginbar">
+                    <li class="pull-left">
+                        <a itemprop="url" href="/" class="navbar-Height navbar-brand brand padding-top-10">
+                            <div class="mainlogo">
+                                <img src=@logoUrl border="0" width="170" height="20" class="img-responsive logo-img" title="iPracticeMath" alt="iPracticeMath" />
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pull-left">@Html.Partial("_searchControl")</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="loginbar pull-right">
+                    <li>@Html.Partial("_GradeMenu")</li>
+                </ul>
+                <!-- End Topbar Navigation -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="navbar navbar-default navbar-margin-bottom">
+    <div class="container">
+        <div class="navbar-header">
+            <button data-target=".navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @*<a class="navbar-brand"></a>*@
+
+        </div>
+        <div class="collapse navbar-collapse navbarCustomCss">
+            <ul id='cssmenu' class="cssmenuclass nav navbar-nav">
+                <li>@Html.ActionLink("Grades", "Index", "Grade", new { area = "" }, new { @class = "grade", id = "drop5", role = "button", data_toggle = "" })</li>
+                <li>@Html.ActionLink("Math Practice", "Index", "Topic", new { area = "" }, new { @class = "math-practice", id = "drop1", role = "button", data_toggle = "" })</li>
+                <li>@Html.ActionLink("Learn", "Index", "Learn", new { area = "" }, new { @class = "learn", id = "drop2", role = "button", data_toggle = "" })
+                <li>@Html.ActionLink("Worksheets", "Index", "Sheet", new { area = "" }, new { @class = "worksheets", id = "drop3", role = "button", data_toggle = "" })</li>
+                <li>@Html.ActionLink("Reports", "Index", "Reports", new { area = "" }, new { @class = "reports", id = "drop4", role = "button", data_toggle = "" })</li>
+                <li>@Html.ActionLink("Awards", "Awards", "Certificate", new { area = "" }, new { @class = "awards", role = "button", data_toggle = "" })</li>
+            </ul>
+        </div>
+
+    </div>
+</div>

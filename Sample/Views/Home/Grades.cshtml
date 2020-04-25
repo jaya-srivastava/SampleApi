@@ -1,0 +1,37 @@
+﻿@model IEnumerable<string>
+@{
+    ViewBag.Title = "Grades - iPracticeMath - Math practice for kids";
+}
+
+<h1 class="mid_head_h2">Grades</h1>
+
+<fieldset>
+<legend>Details</legend>
+<div>
+    <div class="pull-left">
+        <ul class="text-decoration-none">
+            @foreach (var item in Model)
+            {
+                <li>
+                    <a href="/Topic/Details/TAdd"> @item</a>
+                </li>
+            }
+        </ul>
+    </div>
+
+<div class="pull-right">
+    <ul class="text-decoration-none">
+        @foreach (var item in Model)
+        {
+            <li>
+                <a href="/Topic/Details/TAdd"> @item</a>
+            </li>
+        }
+    </ul>
+</div>
+    <div class="float-none">
+    </div>
+</div>
+</fieldset>
+<div class="pull-left">
+</div>

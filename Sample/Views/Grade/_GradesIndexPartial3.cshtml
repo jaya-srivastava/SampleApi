@@ -1,0 +1,300 @@
+﻿@helper TopicLink(string topicName, string cssTopicName, string cssColor) 
+{    
+    <div>
+        <span class="fa-stack fa-sm">
+            <i class="fa fa-circle fa-stack-2x @cssColor"></i>
+            <i class="fa @cssTopicName fa-stack-1x fa-inverse font-color-white"></i>
+        </span>&nbsp;@topicName
+    </div>
+}
+
+
+<div class="row ">
+    <div class="col-md-6 col-sm-6">
+        <div class="row shadow-wrapper GradesDesec">
+            <div class="col-md-12 col-sm-12">
+                <div class="tag-box tag-box-v-left box-shadow shadow-effect-2">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <h2>@Html.ActionLink("1st Grade", "Details", "Grade", new { id = "1" }, new { @class = "a-grades grade-1-skills" })</h2>
+                            <p>iPracticeMath provides students with a chance to test their math skills. These math problems are designed for 1st graders while keeping in
+                            mind the difficulty level and learning potential.</p><br />
+                            <ul class="list-unstyled">
+                                <li><i class="color-green fa fa-check"></i>&nbsp;Includes a variety of topics like adding double and triple digits.</li>
+                                <li><i class="color-green fa fa-check"></i>&nbsp;Similar tasks are also available for subtraction.</li>
+                                <li><i class="color-green fa fa-check"></i>&nbsp;Students learn how to identify ascending and descending orders.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <ul class="list-unstyled blog-tags margin-bottom-0">
+                                @*<li><a href="/grade/grade-1-skills#Addition"><i class="fa fa-addition icon-custom rounded-x icon-bg-orange icon-small font-color-white"></i>&nbsp;Addition</a></li>*@
+                                <li>@TopicLink("Addition","fa-addition","color-orange")</li>
+                                <li>@TopicLink("Subtraction", "fa-subtraction", "color-green") </li>
+                                <li>@TopicLink("Comparing", "fa-comparing", "color-blue")</li>
+                                <li>@TopicLink("Time", "fa-time", "color-red") </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row shadow-wrapper" id="divGrade3">
+            <div class="col-md-12 col-sm-12">
+                <div class="tag-box tag-box-v-left box-shadow shadow-effect-2">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <h2>@Html.ActionLink("3rd Grade", "Details", "Grade", new { id = "3" }, new { @class = "a-grades grade-3-skills" })@*<a href="/grade/grade-3-skills">Grade 3</a>*@</h2>
+                            <p>3rd grade math provides students with tasks to polish their concepts and basic math skills in an easy yet challenging way.</p> <br />
+                            <ul class="list-unstyled">
+                                <li><i class="color-green fa fa-check"></i>&nbsp;Lessons on comparison of numbers and basic division problems.</li>
+                                <li><i class="color-green fa fa-check"></i>&nbsp;Includes number sense topics like even, odd, prime and composite numbers.</li>
+                                <li><i class="color-green fa fa-check"></i>&nbsp;Conversion of time and basic algebra is also provided.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <ul class="list-unstyled blog-tags margin-bottom-0 margin-bottom-0">
+                                <li> @TopicLink("Addition", "fa-addition", "color-orange")</li>
+                                <li> @TopicLink("Subtraction", "fa-subtraction", "color-green")  </li>
+                                <li> @TopicLink("Multiplication", "fa-multiplication", "color-blue")  </li>
+                                <li>@TopicLink("Division", "fa-division", "color-red")</li>
+                                <li>@TopicLink("Comparing", "fa-comparing", "color-blue") </li>
+                                <li>@TopicLink("Time", "fa-time", "color-red")</li>
+                                <li> @TopicLink("Fraction", "fa-fraction", "color-blue")  </li>
+                                <li>@TopicLink("Algebra", "fa-algebra", "color-blue")  </li>
+                                <li> @TopicLink("Number-Sense", "fa-number-sense", "color-black")   </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row shadow-wrapper" id="divGrade5">
+            <div class="col-md-12 col-sm-12">
+                <div class="tag-box tag-box-v-left box-shadow shadow-effect-2">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <h2>@Html.ActionLink("5th Grade", "Details", "Grade", new { id = "5" }, new { @class = "a-grades grade-5-skills" })@*<a href="/grade/grade-5-skills">Grade 5</a>*@</h2>
+                            <p>5th grade math is designed to keep students updated about the topics that need to be learn and understood in school.</p> <br />
+                            <ul class="list-unstyled">
+                                <li><i class="color-green fa fa-check"></i>&nbsp;Skillful use of topics including decimal, algebra and fraction.</li>
+                                <li><i class="color-green fa fa-check"></i>&nbsp;Useful and challenging exercises on number sense.</li>
+                                <li><i class="color-green fa fa-check"></i>&nbsp;Various statistics problems are destined to keep up with the standard learning.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <ul class="list-unstyled blog-tags margin-bottom-0">
+                                <li> @TopicLink("Multiplication", "fa-multiplication", "color-blue")  </li>
+                                <li>@TopicLink("Division", "fa-division", "color-red")</li>
+
+                                <li>@TopicLink("Time", "fa-time", "color-red")</li>
+                                <li>@TopicLink("Algebra", "fa-algebra", "color-blue")</li>
+                                <li>@TopicLink("Statistics", "fa-statistics", "color-red")</li>
+                                <li>@TopicLink("Measurement", "fa-measurement", "color-purple")</li>
+                                <li> @TopicLink("Decimal", "fa-decimal", "color-orange")  </li>
+                                <li> @TopicLink("Fraction", "fa-fraction", "color-blue")     </li>
+                                <li>@TopicLink("Number-Sense", "fa-number-sense", "color-black") </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row shadow-wrapper" id="divGrade7">
+            <div class="col-md-12 col-sm-12">
+                <div class="tag-box tag-box-v-left box-shadow shadow-effect-2">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <h2>@Html.ActionLink("7th Grade", "Details", "Grade", new { id = "7" }, new { @class = "a-grades grade-7-skills" })@*<a href="/grade/grade-7-skills">Grade 7</a>*@</h2>
+                            <p>
+                                7th grade math gives students an opportunity to polish basic and advanced concepts well in time
+                                to avoid problems while performing mathematical functions.
+                            </p> <br />
+                            <ul class="list-unstyled">
+                                <li><i class="color-green fa fa-check"></i>&nbsp;Subtopics include square and cube of numbers, addition and subtraction of decimals, etc.</li>
+                                <li><i class="color-green fa fa-check"></i>&nbsp;Students learn and gain confidence in unit conversion.</li>
+                                <li><i class="color-green fa fa-check"></i>&nbsp;In-depth coverage of statistics topics like mean, median and mode .</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <ul class="list-unstyled blog-tags margin-bottom-0">
+
+                                <li>@TopicLink("Algebra", "fa-algebra", "color-blue")</li>
+                                <li>@TopicLink("Statistics", "fa-statistics", "color-red")</li>
+                                <li>@TopicLink("Measurement", "fa-measurement", "color-purple")</li>
+                                <li>@TopicLink("Decimal", "fa-decimal", "color-orange")</li>
+                                <li>@TopicLink("Fraction", "fa-fraction", "color-blue")</li>
+                                <li>@TopicLink("Number-Sense", "fa-number-sense", "color-black")</li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row shadow-wrapper">
+            <div class="col-md-12 col-sm-12 text-justify">
+                <div class="tag-box tag-box-v-left box-shadow shadow-effect-2">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <h2>@Html.ActionLink("9th Grade", "Details", "Grade", new { id = "9" }, new { @class = "a-grades grade-9-skills" })@*<a href="/grade/grade-9-skills">Grade 9</a>*@</h2>
+                            <p>iPracticeMath brings easy and indulging exercises to help learn the basics of statistics, measurement, algebra and number sense.</p> <br />
+                            <ul class="list-unstyled">
+                                <li><i class="color-green fa fa-check"></i>&nbsp;Master algebra questions dealing with addition,subtraction, multiplication and division.</li>
+                                <li><i class="color-green fa fa-check"></i>&nbsp;Measurement constitutes inter-conversion of length units, price in meter to centimeter and vice-versa.</li>
+                                <li><i class="color-green fa fa-check"></i>&nbsp;Improve number sense through questions related to factorial expressions, division of integers and negative numbers.</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <ul class="list-unstyled blog-tags margin-bottom-0">
+                                <li>@TopicLink("Algebra", "fa-algebra", "color-blue")</li>
+                                <li>@TopicLink("Statistics", "fa-statistics", "color-red")</li>
+                                <li>@TopicLink("Measurement", "fa-measurement", "color-purple")</li>
+                                <li>@TopicLink("Number-Sense", "fa-number-sense", "color-black")</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-6">
+        <div class="row shadow-wrapper">
+            <div class="col-md-12 col-sm-12 text-justify">
+                <div class="tag-box tag-box-v-right  box-shadow shadow-effect-2">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <h2>@Html.ActionLink("2nd Grade", "Details", "Grade", new { id = "2" }, new { @class = "a-grades grade-2-skills" })@*<a href="/grade/grade-2-skills">Grade 2</a>*@</h2>
+                            <p>2nd grade math consists of topics that can help develop the understanding of mathematical terms and functions
+                            that were previously not known to students.</p> <br />
+                            <ul class="list-unstyled">
+                                <li><i class="color-green fa fa-check"></i>&nbsp;Easy and straight forward multiplication problems to help build students’ skills.</li>
+                                <li><i class="color-green fa fa-check"></i>&nbsp;Addition and subtraction of single and double digits.</li>
+                                <li><i class="color-green fa fa-check"></i>&nbsp;Addition and subtraction of time is included as well.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <ul class="list-unstyled blog-tags margin-bottom-0">
+                                <li>@TopicLink("Addition", "fa-addition", "color-orange")</li>
+                                <li>@TopicLink("Subtraction", "fa-subtraction", "color-green")</li>
+                                <li>@TopicLink("Multiplication", "fa-multiplication", "color-blue")</li>                                                    
+                                
+                                <li>@TopicLink("Comparing", "fa-comparing", "color-blue")</li>
+                                
+                                <li>@TopicLink("Time", "fa-time", "color-red")</li>
+                                <li>@TopicLink("Number-Sense", "fa-number-sense", "color-black")</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row shadow-wrapper">
+            <div class="col-md-12 col-sm-12">
+                <div class="tag-box tag-box-v-right  box-shadow shadow-effect-2">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <h2>@Html.ActionLink("4th Grade", "Details", "Grade", new { id = "4" }, new { @class = "a-grades grade-4-skills" })@*<a href="/grade/grade-4-skills">Grade 4</a>*@</h2>
+                            <p>Help teach your students the basics of mathematics in a fun and engaging manner. Make learning 4th grade math a great experience for them!.</p> <br />
+                            <ul class="list-unstyled">
+                                <li><i class="color-green fa fa-check"></i>&nbsp;Easy worksheets on how to convert words into numbers.</li>
+                                <li><i class="color-green fa fa-check"></i>&nbsp;Lesson plans on both simple and complex addition and subtraction.</li>
+                                <li><i class="color-green fa fa-check"></i>&nbsp;Additionally, introduction to basic statistics is also included.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <ul class="list-unstyled blog-tags margin-bottom-0">
+
+                                <li> @TopicLink("Addition", "fa-addition", "color-orange")</li>
+                                <li> @TopicLink("Subtraction", "fa-subtraction", "color-green")  </li>
+                                <li> @TopicLink("Multiplication", "fa-multiplication", "color-blue")  </li>
+                                <li>@TopicLink("Division", "fa-division", "color-red")</li>    
+                                <li>@TopicLink("Time", "fa-time", "color-red")</li>
+                                <li>@TopicLink("Algebra", "fa-algebra", "color-blue")</li>
+                                <li>@TopicLink("Statistics", "fa-statistics", "color-red")</li>
+                                <li>@TopicLink("Measurement", "fa-measurement", "color-purple")</li>
+                                <li> @TopicLink("Fraction", "fa-fraction", "color-blue")  </li>
+                                <li> @TopicLink("Decimal", "fa-decimal", "color-orange")  </li>                               
+                               
+                                <li> @TopicLink("Number-Sense", "fa-number-sense", "color-black")</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row shadow-wrapper">
+            <div class="col-md-12 col-sm-12 text-justify">
+                <div class="tag-box tag-box-v-right  box-shadow shadow-effect-2">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <h2>@Html.ActionLink("6th Grade", "Details", "Grade", new { id = "6" }, new { @class = "a-grades grade-6-skills" })@*<a href="/grade/grade-6-skills">Grade 6</a>*@</h2>
+                            <p>6th grade math constitutes greatly of easy as well as complex questions to see how well students have learnt the concepts.</p> <br />
+                            <ul class="list-unstyled">
+                                <li><i class="color-green fa fa-check"></i>&nbsp;Students are encouraged to revise basic division concepts and also learn new ones.</li>
+                                <li><i class="color-green fa fa-check"></i>&nbsp;Unlimited lessons on basic and medium level multiplication of fraction.</li>
+                                <li><i class="color-green fa fa-check"></i>&nbsp;Addition and subtraction of integers under “Number Sense” is also provided.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <ul class="list-unstyled blog-tags margin-bottom-0">
+                                <li>@TopicLink("Algebra", "fa-algebra", "color-blue")</li>
+                                <li>@TopicLink("Statistics", "fa-statistics", "color-red")</li>
+                                <li>@TopicLink("Measurement", "fa-measurement", "color-purple")</li>
+                                <li> @TopicLink("Decimal", "fa-decimal", "color-orange")  </li> 
+                                <li> @TopicLink("Fraction", "fa-fraction", "color-blue")</li>
+                                <li> @TopicLink("Number-Sense", "fa-number-sense", "color-black") </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row shadow-wrapper">
+            <div class="col-md-12 col-sm-12">
+                <div class="tag-box tag-box-v-right box-shadow shadow-effect-2">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <h2>@Html.ActionLink("8th Grade", "Details", "Grade", new { id = "8" }, new { @class = "a-grades grade-8-skills" })@*<a href="/grade/grade-8-skills">Grade 8</a>*@</h2>
+                            <p>8th grade math is mostly focused on acquiring knowledge related to algebra, statistics, measurements, decimals, fractions and number sense.</p> <br />
+                            <ul class="list-unstyled">
+                                <li><i class="color-green fa fa-check"></i>&nbsp;Get complete understanding of algebra.</li>
+                                <li><i class="color-green fa fa-check"></i>&nbsp;Have fun practicing statistics questions involving range, mean, median and mode.</li>
+                                <li><i class="color-green fa fa-check"></i>&nbsp;Learn inter-conversion between temperature units, length units and volume units under “Measurements”.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <ul class="list-unstyled blog-tags margin-bottom-0">
+                                <li>@TopicLink("Algebra", "fa-algebra", "color-blue")</li>
+                                <li>@TopicLink("Statistics", "fa-statistics", "color-red")</li>
+                                <li>@TopicLink("Measurement", "fa-measurement", "color-purple")</li>
+                                <li> @TopicLink("Decimal", "fa-decimal", "color-orange")  </li> 
+                                <li> @TopicLink("Fraction", "fa-fraction", "color-blue")</li>
+                                <li> @TopicLink("Number-Sense", "fa-number-sense", "color-black")</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

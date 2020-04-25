@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewBag.Title = "Grades 1-5";
+}
+
+<div class="row">
+    <div class="headline">
+        <h1 class="heading-sm">Grades 1-5</h1><br />
+    </div>
+    <div class="row content-boxes-v2 margin-bottom-30">
+        <div class="col-md-4 md-margin-bottom-30">
+            <a href="@Url.Action("Details", "Grade", new { id = "1" })">
+                <h3 class="heading-sm">
+                    <i class="icon-custom rounded-x icon-sm icon-bg-u fa fa-clock-o"></i>
+                    <span>1st Grade@*@Html.ActionLink("1st Grade", "Details", "Grade", new { id = "1" }, new { @class = "grade-1-skills", title = "grade 1" })*@</span>
+                </h3>
+            </a>
+            <p>
+                iPracticeMath provides students with a chance to test their math skills. These math problems are designed for 1st
+                graders while keeping in mind the difficulty level and learning potential.
+            </p>            
+        </div>
+        <div class="col-md-4 md-margin-bottom-30">
+            <a href="@Url.Action("Details", "Grade", new { id = "1" })">
+                <h3 class="heading-sm">
+                    <i class="icon-custom rounded-x icon-sm icon-bg-blue fa fa-tasks"></i>
+                    <span>2nd Grade</span>
+                </h3>
+            </a>
+            <p>2nd grade math consists of topics that can help develop the understanding of mathematical terms and functions that were previously not known to students.</p>
+        </div>
+        <div class="col-md-4">
+            <a href="@Url.Action("Details", "Grade", new { id = "1" })">
+                <h3 class="heading-sm">
+                    <i class="icon-custom rounded-x icon-sm icon-bg-red fa fa-tablet"></i>
+                    <span>3rd Grade</span>
+                </h3>
+            </a>
+            <p>3rd grade math provides students with tasks to polish their concepts and basic math skills in an easy yet challenging way.</p>           
+        </div>
+    </div>
+    <div class="row content-boxes-v2 margin-bottom-30">
+        <div class="col-md-4 md-margin-bottom-30">
+            <a href="@Url.Action("Details", "Grade", new { id = "1" })">
+                <h3 class="heading-sm">
+                    <i class="icon-custom rounded-x icon-sm icon-bg-sea fa fa-bar-chart-o"></i>
+                    <span>4th Grade</span>
+                </h3>
+            </a>
+            <p>Help teach your students the basics of mathematics in a fun and engaging manner. Make learning 4th grade math a great experience for them!.</p>
+        </div>
+        <div class="col-md-4 md-margin-bottom-30">
+            <a href="@Url.Action("Details", "Grade", new { id = "1" })">
+                <h2 class="heading-sm">
+                    <i class="icon-custom rounded-x icon-sm icon-bg-purple fa fa-bullseye"></i>
+                    <span>5th Grade</span>
+                </h2>
+            </a>
+            <p>5th grade math is designed to keep students updated about the topics that need to be learn and understood in school.</p>
+    </div>
+        <div class="col-md-4">
+            @*<h2 class="heading-sm">
+        <i class="icon-custom rounded-x icon-sm icon-bg-orange fa fa-users "></i>
+        <span>Parent Involvement</span>
+    </h2>
+    <p>Focus on high-quality education and global success drives students to work harder. This translates into an exceptional experience for students as well as parents.</p>*@
+        </div>
+    </div>
+</div>

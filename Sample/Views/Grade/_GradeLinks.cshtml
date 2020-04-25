@@ -1,0 +1,112 @@
+﻿@using Sample.Models.DTO
+@using iPractice.Core;
+@helper QuestionCanvas(List<Sample.Models.DTO.QuestionDto> lstQuestion)
+{
+    @Html.Partial("~/Views/shared/_topicQuestions.cshtml", lstQuestion)
+}
+@model Sample.Models.DTO.GradeDetailDto
+@{    
+    string[] colors = { "color-bottom-green", "color-bottom-orange", "color-bottom-sea", "color-bottom-purple", "color-bottom-aqua", "color-bottom-red", "color-bottom-gray", "color-bottom-green" };
+    string[] textColors = { "color-orange", "color-sea", "color-aqua", "color-red", "color-gray", "color-blue", "color-green"};
+    var colorCss = "";
+    var textCss = "";    
+}
+
+@functions
+{
+    List<GradeSubTopicDto> GetSubTopicOrderedList(List<GradeSubTopicDto> groupSubTopics, int gradeId)
+    {
+        if (gradeId == 9 || gradeId == 10)
+        {
+            return groupSubTopics.OrderByDescending(x => x.SubTopic.SubTopicId).Reverse().ToList();
+        }
+        return groupSubTopics.OrderByDescending(x => x.SubTopic.SubTopicId).ToList();
+    }
+}
+@if (Model != null && Model.Topics.Count() > 0)
+{
+        int i = 0; int j = 0;
+        int skip = 0; 
+        var minCount = Math.Min(colors.Count(), textColors.Count());
+        
+        var countModel = Model.Topics.Count();
+        var remainingGroupId = countModel > 1 ? "Miscellaneous" : "All";
+        var newModel = Model.Topics.OrderByDescending(x=>x.TopicId).ToList();
+        foreach (var itemGroup in newModel)
+        {
+            var GroupSubtopics = itemGroup.GradeSubTopics;
+            var groupId = string.IsNullOrEmpty(itemGroup.TopicDesc) ? remainingGroupId : itemGroup.TopicDesc;
+            if (i % 2 == 0 && GroupSubtopics.Count>0)
+            {
+                @:<div class="row">
+            }                
+            int count=1;
+            if (GroupSubtopics.Count > 0)
+            {
+                if (i >= minCount)
+                {
+                    j = 0;
+                }
+                else { j = i; }                
+                colorCss = colors[j];
+                textCss = textColors[j];
+                <div class="col-sm-6 col-md-6">
+                    <div class="headline"><h4 class="heading-sm @colorCss @textCss font-bold">@groupId</h4></div>
+                    <ul class="list-style blog-tags margin-bottom-10">
+                        @foreach (var item in GetSubTopicOrderedList(GroupSubtopics,Model.GradeId))
+                        {
+                            if (item.IsInactive.HasValue && item.IsInactive.Value) { continue; }
+                            if (count < 6)
+                            {
+                                <li class="col-sm-12 col-md-12 padding-left-0">
+                                    @if (item.SubTopic.IsSEOUrlActive.HasValue && item.SubTopic.IsSEOUrlActive.Value)
+                                    {
+                                        <a href="@Url.Action(item.SubTopic.TopicTopicDesc.ToStringURLBuilder(), "math-problem", new { id = item.SubTopic.SubTopicDescSEO.ToStringURLBuilder() })">@(item.SubTopic.SubTopicDesc.Trim())</a>
+                                    }
+                                    else
+                                    {
+                                        <a href="@Url.Action(item.SubTopic.TopicTopicDesc.ToStringURLBuilder(), "math-problem", new { id = item.SubTopic.SubTopicId })">@(item.SubTopic.SubTopicDesc.Trim())</a>
+                                    }
+                                    <span class="progress-@item.SubTopic.SubTopicId"></span>
+                                </li>
+                            }
+                            else
+                            {
+                                <li class="@itemGroup.TopicDesc.Replace(" ", "-").ToLower() hide col-sm-12 col-md-12 padding-left-0">
+                                    @if (item.SubTopic.IsSEOUrlActive.HasValue && item.SubTopic.IsSEOUrlActive.Value)
+                                    {
+                                        <a href="@Url.Action(item.SubTopic.TopicTopicDesc.ToStringURLBuilder(), "math-problem", new { id = item.SubTopic.SubTopicDescSEO.ToStringURLBuilder() })">@(item.SubTopic.SubTopicDesc.Trim())</a>
+                                    }
+                                    else
+                                    {
+                                        <a href="@Url.Action(item.SubTopic.TopicTopicDesc.ToStringURLBuilder(), "math-problem", new { id = item.SubTopic.SubTopicId })">@(item.SubTopic.SubTopicDesc.Trim())</a>
+                                    }
+                                    <span class="progress-@item.SubTopic.SubTopicId"></span>
+                                </li>
+                            }
+                            count = count + 1;
+                        }
+                        @if (count > 6)
+                        {
+                            <li class="col-sm-12 col-md-12 padding-left-0"><a id="@itemGroup.TopicDesc.Replace(" ", "-").ToLower()" class="showmore show-more-padding btn-u btn-u-default cursor-pointer">Show more......</a></li>
+                        }
+                    </ul>
+            </div>
+            }
+            if (i % 2 != 0 || i == newModel.Count() - 1)
+            {
+                @:</div><br />
+                string[] ids = Model.Topics.Distinct().Skip(skip * 2).Take(2).Select(x => x.TopicId).ToArray();
+                var lst = (from ques in Model.Questions
+                           where ids.Contains(ques.QuestionDetail.SubTopic.TopicTopicId)
+                           select ques).Take(4).ToList();                
+                <div>@QuestionCanvas(lst)</div>
+                skip=skip+1;
+            }
+            if (GroupSubtopics.Count > 0)
+            {
+                i = i + 1;
+            }
+        }
+}
+

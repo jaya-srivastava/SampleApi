@@ -1,0 +1,59 @@
+﻿<ul class="nav nav-pills mainMenuCss">
+    <li class="dropdown">
+        @* @Html.ActionLink("Math Practice", "Index", "Topic",  new { area = "" },new { @class="dropdown-toggle",id="drop1", role="button", data_toggle="dropdown" } )*@
+        <b class="caret carrott" data-toggle="dropdown" style="border-bottom-color: white; border-top: 8px solid white; border-right: 8px solid transparent; border-left: 8px solid transparent; cursor: pointer"></b>
+        <a class="dropdown-toggle" id="drop1" role="button" style="width: 95px" href="/math-practice">Math Practice</a>
+        <ul id="menu1" class="dropdown-menu" aria-labelledby="drop1">
+
+            <li>@Html.ActionLink("Additions", "Details", "Topic", new { id = "Addition", area = "" }, null)</li>
+            <li>@Html.ActionLink("Subtractions", "Details", "Topic", new { id = "Subtraction", area = "" }, null)</li>
+            <li>@Html.ActionLink("Multiplication", "Details", "Topic", new { id = "Multiplication", area = "" }, null)</li>
+            <li>@Html.ActionLink("Division", "Details", "Topic", new { id = "Division", area = "" }, null)</li>
+            <li>@Html.ActionLink("Algebra", "Details", "Topic", new { id = "Algebra", area = "" }, null)</li>
+            <li>@Html.ActionLink("Fraction", "Details", "Topic", new { id = "Fraction", area = "" }, null)</li>
+            <li>@Html.ActionLink("Decimal", "Details", "Topic", new { id = "Decimal", area = "" }, null)</li>
+            <li>@Html.ActionLink("Numbers", "Details", "Topic", new { id = "Number-Sense", area = "" }, null)</li>
+            <li>@Html.ActionLink("Measurement", "Details", "Topic", new { id = "Measurement", area = "" }, null)</li>
+            <li>@Html.ActionLink("Time", "Details", "Topic", new { id = "Time", area = "" }, null)</li>
+           <li>@Html.ActionLink("Statistics", "Details", "Topic", new { id = "Statistics", area = "" }, null)</li>
+            @* <li>@Html.ActionLink("Compare", "Details", "Topic", new { id = "Compare", area = "" }, null)</li>
+            <li>@Html.ActionLink("WordProblem", "Details", "Topic", new { id = "WordProblem", area = "" }, null)</li>
+			
+            *@
+        </ul>
+    </li>
+
+    @*<li class="dropdown">
+        <b class="caret carrott" data-toggle="dropdown"
+            style="border-bottom-color: white; border-top: 8px solid white; border-right: 8px solid transparent; border-left: 8px solid transparent; cursor: pointer"></b>
+        <a class="dropdown-toggle" id="drop2" role="button" style="width: 68px" href="/Learn">Learning</a>
+        <ul id="menu2" class="dropdown-menu" aria-labelledby="drop2">
+            <li>@Html.ActionLink("Basic Math", "BasicMath", "Learn", new { id = "", area = "" }, null)</li>
+            <li>@Html.ActionLink("Algebra", "Algebra", "Learn", new { id = "", area = "" }, null)</li>
+            <li>@Html.ActionLink("Calculus", "Calculus", "Learn", new { id = "", area = "" }, null)</li>
+            <li>@Html.ActionLink("Decimal", "Decimal", "Learn", new { id = "", area = "" }, null)</li>
+            <li>@Html.ActionLink("Fraction", "Fraction", "Learn", new { id = "", area = "" }, null)</li>
+            <li>@Html.ActionLink("Consumer Math", "ConsumerMath", "Learn", new { id = "", area = "" }, null)</li>
+            <li>@Html.ActionLink("Statistics", "Statistics", "Learn", new { id = "", area = "" }, null)</li>
+        </ul>
+    </li>*@
+     <li>
+        @Html.ActionLink("Learn", "Index", "Learn", new { area = "" }, new { @class = "", id = "drop2", role = "button", data_toggle = "" })
+    </li>
+
+    <li>
+        @Html.ActionLink("WorkSheets", "Index", "Sheet", new { area = "" }, new { @class = "", id = "drop3", role = "button", data_toggle = "" })
+    </li>
+
+    <li>
+        @Html.ActionLink("Reports", "Index", "Reports", new { area = "" }, new { @class = "", id = "drop4", role = "button", data_toggle = "" })
+    </li>
+    <li>
+        <a href="/math-practice/Algebra">Algebra</a>
+    </li>
+    <li>
+        <a href="/math-practice/Comparing">Comparing<sup class="label label-success">New</sup></a>
+    </li>
+
+</ul>
+

@@ -1,0 +1,58 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+
+@{
+    ViewBag.Title = "Error : math website for kids";
+    ViewBag.MetaDescription = "math website for kids : unexpected error";
+}
+
+<div class="container">
+    <div class="row page-404">
+        <div class="col-xs-12 col-sm-12 col-md-12 page-404-Span">
+            <span>Opps !!!</span>
+            <span>Sorry, an error occurred while processing your request.</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <br />
+            <span>Please, send an e-mail to site administrator at <a href="mailto:info@ipracticemath.com" class="">info@ipracticemath.com</a>.    
+            </span>
+        </div>
+    </div>
+    <div>
+        <input type="hidden" value="@DateTime.Now.ToUniversalTime()" />
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            @Html.Partial("~/Views/shared/_ErrorPartial.cshtml")
+        </div>
+    </div>
+</div>
+
+<style>
+    .page-404 p i {
+        font-style: normal;
+        text-shadow: 5px 0 10px;
+    }
+
+    .page-404 p {
+        color: #777777;
+        font-size: 150px;
+        line-height: 100px;
+        text-align: right;
+    }
+
+    .page-404-Span {
+        margin-top: 50px;
+    }
+
+    .page-404 span {
+        display: block;
+        font-size: 32px;
+        color: #777777;
+        position: relative;
+        line-height: 40px;
+        text-align: center;
+    }
+</style>
+

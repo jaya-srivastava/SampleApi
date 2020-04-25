@@ -1,0 +1,62 @@
+﻿@using DevTrends.MvcDonutCaching;
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" class="no-js" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"
+itemscope itemtype="http://schema.org/WebSite">
+<!--<![endif]-->
+<head>    
+    @{
+        ViewBag.MetaDescription = ViewBag.MetaDescription ?? @"Online free Math Website for kids - to learn, Practice math skills along with worksheets for 2nd Grade, 3rd Grade,6th Grade for Add, Subtract, Multiply, Division etc.";
+        ViewBag.Keywords = ViewBag.Keywords ?? "math practice, math help, Learn math, Practice Math, Grade1, Grade2, Grade3, Grade4, Grade5, Algebra, Addition, Multiply, Division, Fraction, Decimal, Worksheet, Reports";
+        ViewBag.Title = ViewBag.Title ?? "iPracticeMath -Math Practice, Worksheet and Lesson plan for K-12 Students";
+        //ViewBag.FacebookUrl = ViewBag.FacebookUrl ?? HttpContext.Current.Request.Url.ToString();
+    }
+    <title>@ViewBag.Title</title>
+    @Html.Partial("_header")
+
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+    @Html.Partial("_menuBarCommonPartial")
+
+    <div id="mainContainer">
+        @RenderBody()
+    </div>
+    <div id="searchResult" class="container">
+    </div>
+
+    <meta itemprop="name" content="ipracticemath.com">
+    <script src='@Scripts.Url("~/scripts/jquery")' type="text/javascript"></script>
+    <script src='@Scripts.Url("~/scripts/a")' type="text/javascript" async></script>
+
+    @RenderSection("scripts", required: false)   
+    
+    @* <script type="text/javascript">
+         var uvOptions = {};
+         (function () {
+             var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+             uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/UtxAegxx7nSUtZdEZbpo2A.js';
+             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+         })();
+    </script>*@
+
+    <!--Google Custom Search-->
+    @*<script src="~/scripts/customsearch.js" type="text/javascript" async></script>*@
+    <link rel="stylesheet" href="~/content/css/print.css" type="text/css" media="print" property='stylesheet'>
+    @*<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" property='stylesheet' type="text/css" media="all" />*@
+
+    
+    <script type="text/javascript">
+        // <![CDATA[
+        var $ = jQuery.noConflict();
+        $(document).ready(function () { $('#myCarousel').carousel({ interval: 5000, cycle: true }); });
+        // ]]>
+
+    </script>
+</body>
+</html>

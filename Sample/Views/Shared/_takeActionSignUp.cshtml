@@ -1,0 +1,25 @@
+﻿@if (!Request.IsAuthenticated)
+{
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-3 text-center">
+            </div>
+
+            <div class="col-sm-3 col-md-3 text-center">
+                <h4>Become a member today!</h4>
+                <a href="@Url.Action("register", "membership", new { id=""}, null)" target="_blank" class="btn-u btn-u-lg rounded btn-u-blue">
+                    <i class="fa fa-arrow-circle-right"></i>&nbsp;Register (it’s Free)
+                </a>
+            </div>
+            <div class="col-sm-3 col-md-3 text-center">
+                <h4>Are you a member? Sign in!</h4>
+                <a href="@Url.Action("signin", "membership")" target="_blank" class="btn-u btn-u-lg rounded btn-u-split-red">
+                    <i class="fa fa-arrow-circle-right"></i>&nbsp;Login to your account
+                </a>
+            </div>
+            <div class="col-sm-3 col-md-3 text-center">
+            </div>
+
+        </div>
+    </div>
+}

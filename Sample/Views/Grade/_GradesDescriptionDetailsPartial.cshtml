@@ -1,0 +1,204 @@
+﻿@model Sample.Models.DTO.GradeDetailDto
+
+<div class="row margin-bottom-30 def InformationBox gradesNotification margin-left-zero">
+    @switch (Model.GradeId)
+    {
+        case -1:
+            {
+                <div class="col-sm-2 col-md-2">
+                    <h2>Pre-K :</h2>
+                </div>
+                <div class="col-sm-10 col-md-10">
+                    The goal for this grade is to teach students concept of following topics:
+                    <ul>
+                        <li>Learn Counting</li>
+                        <li>Learn concept of Addition.</li>
+                    </ul>
+                </div>
+                break;
+            }
+        case 0:
+            {
+                <div class="col-sm-2 col-md-2">
+                    <h2>KinderGarten :</h2>
+                </div>
+                <div class="col-sm-10 col-md-10">
+                    Learn basics of Addition and Subtraction. This sets them ready to learn the Strategies for complex Addition and Subtraction problems.
+                </div>
+                break;
+            }
+        case 1:
+            {
+                <div class="col-sm-2 col-md-2">
+                    <h2>1st Grade :</h2>
+                </div>
+                <div class="col-sm-10 col-md-10">
+                    iPracticeMath intends to provide large number of math practice for learning Addition and Subtraction.<br />
+                    Learning of these two topics sets them ready for learning Multiplication and Division.<br />
+                    Also these levels helps them in understanding the importance of place values in a number.
+                    <p class="gradesNotif">
+                        a) Addition
+                        b) Subtraction
+                    </p>
+                </div>
+                break;
+            }
+        case 2:
+            {
+                <div class="col-sm-2 col-md-2">
+                    <h2>2nd Grade : </h2>
+                </div>
+                <div class="col-sm-10 col-md-10">
+                    The aim for math lesson in this grade is to set building blocks for mathematics learning.<br />
+                    <p class="gradesNotif">
+                        a) Building Fluency/Confidence with Addition & Subtraction problems.<br />
+                        b) Develop understanding of the Number System and important aspects of Number Theory.<br />
+                    </p>
+                </div>
+                break;
+            }
+        case 3:
+            {
+                <div class="col-sm-2 col-md-2">
+                    <h2>3rd Grade :</h2>
+                </div>
+                <div class="col-sm-10 col-md-10">
+                    The mathematics learned in this grade helps kids to develop strong foundation for learning STEM in future.<br />
+                    Main focus in this Grade is on:<br />
+                    <p class="gradesNotif">
+                        a) Students needs to focus on Strategies to solve multiplication and division problem apart from understanding concepts.
+                        <br />
+                        b) Develop the understanding of Fractions (with special focus on unit fractions.)<br />
+                        c) Learn the concept of Area as Rectangular Arrays.<br />
+                        d) Student also need to learn the how the Fraction and Area of part of a shape are related concept.<br />
+                    </p>
+                    <p>
+                        iPracticeMath provides math practice of Addition and Subtraction as prerequisite material to sharpen their skills.
+                        Also, a large number of math-practice topics are provided in Multiplication and Division to solidify the foundation for learning math.
+                    </p>
+                </div>
+                break;
+            }
+        case 4:
+            {
+                <div class="col-sm-2 col-md-2">
+                    <h2>4th Grade :</h2>
+                </div>
+                <div class="col-sm-10 col-md-10">
+                    On completion of this Grade a Student is assumed to be well-versed with the 4 Basic Operation of whole number (Add, Subtract, Multiply & Division) and get ready to learn higher
+                    aspects of mathematics Learning.<br />
+
+                    <p class="gradesNotif">
+                        In this we provides math practice test for :<br />
+                        a) More difficult Multiplication and Division problems.<br />
+                        b) Problems related with Fractions and as well as introductory problem in decimal numbers.<br />
+                    </p>
+                </div>
+                break;
+            }
+        case 5:
+            {
+                <div class="col-sm-2 col-md-2">
+                    <h2>5th Grade :</h2>
+                </div>
+                <div class="col-sm-10 col-md-10">
+                    To deal with unlike fractions, Kids need to learn the Factors, prime numbers and LCM and GCF.<br />
+                    <p class="gradesNotif">
+                        a) Practice test to develop expertise in all aspects of Fractions.
+                        <br />
+                        b) Developing fluency with whole number and decimal operations.<br />
+                    </p>
+                </div>
+                break;
+            }
+        case 6:
+            {
+                <div class="col-sm-2 col-md-2">
+                    <h2>6th Grade :</h2>
+                </div>
+                <div class="col-sm-10 col-md-10">
+                    This grade sets the kids/Students to path of learning the Algebra.
+                    <br />
+                    <p class="gradesNotif">
+                        a) Learn the concept of variables.<br />
+                        b) Understand the use of variables in mathematical expressions.<br />
+                        c) To grasp the notion of negative numbers.<br />
+                        d) start exploring the Statistics and how and why Statistical techniques are required in daily life.<br />
+
+                    </p>
+                </div>
+                break;
+            }
+        case 7:
+            {
+                <div class="col-sm-2 col-md-2">
+                    <h2>7th Grade : </h2>
+                </div>
+                <div class="col-sm-10 col-md-10">
+                    As per Common Core Standards, the goal in this grade is to teach Students following topic to set them path for learning high school math.
+                    <br />
+                    The following Topics are given utmost importance in this topic.
+                    <p class="gradesNotif">
+                        a) Algebra.<br />
+                        b) Geometry.<br />
+                        c) Statistics and Probability.
+                        <br />
+                    </p>
+                </div>
+                break;
+            }
+        case 8:
+            {
+                <div class="col-sm-2 col-md-2">
+                    <h2>8th Grade :</h2>
+                </div>
+                <div class="col-sm-10 col-md-10">
+                    Grade-8 is about revising the basics like fractions, decimals and number-theory and then becoming expert in following topics:
+                    <p class="gradesNotif">
+                        a) Complete understanding of Algebra.<br />
+                        b) Geometry.<br />
+                        c) Statistics and Probability.<br />
+                    </p>
+                </div>
+                break;
+            }
+        case 9:
+            {
+                <div class="col-sm-2 col-md-2">
+                    <h2>9th Grade : </h2>
+                </div>
+                <div class="col-sm-10 col-md-10">
+                    9th Grade math set the the students for College Level math:
+                    <p class="gradesNotif">
+                        a) Trigonometry.<br />
+                        b) Algebra II.<br />
+                        c) 3D Geometry etc.<br />
+                    </p>
+                </div>
+                break;
+            }
+        case 10:
+            {
+                <div class="col-sm-2 col-md-2">
+                    <h2>10th Grade : </h2>
+                </div>
+                <div class="col-sm-10 col-md-10">
+                    iPracticeMath provides a platform, which consists of a variety of worksheets that are simple yet challenging.
+                    Grade 10 students can access the relevant math syllabus, which caters all the topics necessary for their learning.
+                    <p class="gradesNotif">
+                        a) Unlimited lessons on algebra II, trigonometry and geometry.<br />
+                        b) Students will acquire new ways of learning difficult and stressful topics.<br />
+                        c) Worksheets will train students in skillful use of topics like consumer math, algebra and calculus.<br />
+                    </p>
+                </div>
+                break;
+            }
+        default:
+            {
+                <p></p>
+                break;
+            }
+    }
+</div>
+
+

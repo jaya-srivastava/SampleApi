@@ -1,0 +1,140 @@
+﻿
+.dialogbox {
+  width: 168px;
+  height: auto;
+  background: #fbfbf9;
+  border: 1px solid grey;
+  display: none;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.toolbar {  
+    border-collapse:separate;
+    border-spacing:1px !important;
+    text-align:center;
+}
+
+
+.toolbar,
+.toolbar .menu {
+  display: inline-block;
+  position: relative;
+}
+
+.toolbar p {
+  height: 1.8em;
+  padding: .25em;
+  margin: 0;
+}
+
+.toolbar .button,
+.toolbar .menu {
+    padding:5px 3px;
+  max-width: 50px;
+  min-width: 50px;
+  max-height: 30px;
+  min-height: 30px;
+  border: 1px solid cadetblue;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+}
+.toolbar .menu {
+  border-bottom-color: lightgray;
+  /*border-bottom-left-radius:0;
+  border-bottom-right-radius:0;*/
+}
+
+
+.toolbar-button-width
+{
+    max-width: 66px !important;
+  min-width: 66px !important;
+}
+
+.toolbar .menu:hover div {
+  display: block;
+}
+
+.toolbar .menu div {
+  display: none;
+  width: 100px;
+  padding: 1px;
+  position: absolute;
+  top: -2px;
+  left: 103px;
+  background-color: white;
+  border: 2px solid slategray;
+  /*border-top:none;*/
+  border-radius: 5px;
+  /*border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;*/
+}
+
+.toolbar p:hover {
+  background-color: paleturquoise;
+}
+
+.box {
+  background-color: lightgray;
+}
+
+.toolbar p code {
+  display: block;
+  float: right;
+}
+
+/*by Hoang Lu*/
+
+
+/*
+
+.mathquill-embedded-latex{
+	color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    float: left;
+    margin-left:10px; 
+    top: 0 !important;
+}
+
+.toolbar{
+	margin-left: 30px;
+}
+
+#temp{
+	padding: 10px;
+}
+
+.mathquill_main{
+	margin-left: 10px;
+}
+span.frac {
+  text-align: center;
+}
+span.frac > sup {
+  display: block;
+  border-bottom: 1px solid;
+  font: inherit;
+}
+span.frac > sub {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.sqrt_symbol{
+    border-top: 1px solid;
+}
+
+*/
+
+.mq-textbox-css {
+    width: 100%;
+    height: auto !important;
+    padding: 5px !important;
+}

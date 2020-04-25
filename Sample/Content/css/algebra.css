@@ -1,0 +1,27 @@
+﻿/*from AlgebraStyle.css*/
+
+.answer_heading {
+    font-weight: bold;
+    color: #7231A2;
+}
+
+.sotion_bold {
+    color: #28A6F1;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.solution_proc {
+    margin-left: 200px;
+}
+
+.sotion_green_proc {
+    font-weight: bold;
+    color: #007D3F;
+}
+
+.some_quick_tips h4, .some_quick_tips h3 {
+    font: bold 16px Arial, Helvetica, sans-serif;
+    color: #8ab90c;
+    padding: 15px 0 0 0;
+}

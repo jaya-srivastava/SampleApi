@@ -1,0 +1,31 @@
+﻿@model List<Sample.Models.DTO.QuestionDto>
+@using iPractice.Core;
+@{
+    string[] colors = { "bg-color-dark", "bg-color-green", "bg-color-orange", "bg-color-blue" };
+    string colorCss;
+    int j = 0;
+}
+
+<div class="row">
+    @foreach(var item in Model)
+    { 
+        colorCss = colors[j];
+        var Topic=item.QuestionDetail.SubTopic.TopicTopicDesc.ToStringURLBuilder();
+        var SubTopic = item.QuestionDetail.SubTopic.SubTopicDesc.ToStringURLBuilder();
+        var ques = @Newtonsoft.Json.JsonConvert.SerializeObject(@item);
+        <div class="col-md-3 col-sm-3">
+            <a class="CanvasLi" href="@Url.Action(Topic, "math-problem", new { id = SubTopic })">
+                <div id="canvas-wrap_@item.QuestionId" class="image">                    
+                    <div class="overlay @colorCss" id="overlay_@item.QuestionId"></div>
+                    <div id="img-out_@item.QuestionId"><canvas id="myCanvas_@item.QuestionId" height="15" width="15"></canvas></div>
+                    <label class="hide">
+                        @ques
+                    </label>
+                </div>
+            </a>
+        </div>
+        j=j+1;
+    }        
+</div>
+
+        

@@ -1,0 +1,78 @@
+﻿
+.display-inline{
+  display:inline !important;
+}
+
+
+.qa-together-width{
+  width:50% !important;
+}
+
+
+* {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        [ng-drag] {
+            -moz-user-select: -moz-none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        [ng-drag] {
+            width: auto;
+            height: auto;
+            color: grey;
+            text-align: center;
+            padding-top: 0px;
+            display: block;
+            cursor: move;
+        }
+
+        
+        [ng-drag].drag-over {
+            border: solid 1px red;
+        }
+
+        [ng-drag].dragging {
+            opacity: 0.5;
+        }
+
+        [ng-drop] {
+            text-align: center;
+            display: block;
+            position: relative;
+            width: auto;
+            height: auto;
+            float: left;
+        }
+
+        [ng-drop].drag-enter {
+            border: solid 1px silver;
+        }
+
+        [ng-drop] span.title {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 20px;
+            height: 20px;
+            margin-left: -100px;
+            margin-top: -10px;
+        }
+
+        [ng-drop] div {
+            position: relative;
+            z-index: 2;
+        }
+
+        .draglist {
+            display: inline-block;
+            margin: 0 auto;
+        }
+

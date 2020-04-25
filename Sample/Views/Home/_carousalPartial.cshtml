@@ -1,0 +1,83 @@
+<div id="myCarousel" class="carousel">
+    <div class="carousel-inner carousal-main-height">
+        <div class="item jumbotron home-backcolor-green active home-carousel-height">
+            <div class="container margin45">
+                <h3 class="text-shadow-green"><i class="fa fa-check-square-o"></i>&nbsp;High School Math</h3><br />
+                <p>Algebra - Matrices and Quadratics.</p>
+                <p>Differential Calculus and Integral Calculus</p>
+                <br />
+                @Html.ActionLink("Practice Calculus", "grade-10-skills", "grade", null, new { @class = "btn-white btn-white-orange" })
+            </div>
+        </div>
+        <div class="item home-backcolor-orange jumbotron home-carousel-height">
+            <div class="container margin45">
+                <h3 class="text-shadow-orange"><i class="fa fa-thumbs-up"></i>&nbsp;Challenge Your Students</h3><br />
+                <p>Keep student engaged and excited with wide range of math problems.</p>
+                <br />                
+                @Html.ActionLink("SIGN UP FOR FREE", "Register", "Membership", null, new { @class = "btn-white btn-white-orange" })
+            </div>
+        </div>
+        <div class="item home-backcolor-grey jumbotron home-carousel-height">
+            <div class="container margin45">
+                <h3 class="text-shadow-grey"><i class="fa fa-dollar"></i>&nbsp;Zero Membership Cost</h3><br />
+                <p>It’s quick. It’s easy. It’s FREE.<br />
+                    <br />
+                Become a Member Today!</p>                
+                @Html.ActionLink("PARENT", "register", "membership", new { id =  "parent" }, new { @class = "btn-white margin-right20 btn-white-blue" })
+                @Html.ActionLink("TEACHER", "register", "membership", new { id =  "teacher" }, new { @class = "btn-white margin-right20 btn-white-sea" })
+            </div>
+        </div>
+        <div class="item jumbotron home-backcolor-blue home-carousel-height">
+            <div class="container margin45">
+                <h3 class="text-shadow-blue"><i class="fa fa-check-square-o"></i>&nbsp;Common Core Aligned</h3><br />
+                <p>Providing unlimited math practice and solutions for K-9.</p>
+                <br />                
+                @Html.ActionLink("PRACTICE A MATH SKILL", "index", "Topic", null, new { @class = "btn-white btn-white-blue" })
+            </div>
+        </div>
+        <div class="item home-backcolor-green jumbotron home-carousel-height">
+            <div class="container margin45">
+                <h3 class="text-shadow-green"><i class="fa fa-graduation-cap"></i>&nbsp;Proud Parent</h3><br />
+                <p>Our 24/7 tutoring allows parents to reinforce classroom lessons at home and actively engage in their child’s education.</p>
+                <br />
+                @Html.ActionLink("SIGN UP FOR FREE", "Register", "Membership", null, new { @class = "btn-white btn-white-green" })
+            </div>
+        </div>
+        <div class="item home-backcolor-brown jumbotron home-carousel-height">
+            <div class="container margin45">
+                <h3 class="text-shadow-brown"><i class="fa fa-tablet"></i>&nbsp;Free Online Math</h3><br />                
+                <p>Various Math Topics. Printable Worksheets.
+                    <br />
+                    Infinite Assignments.  Real-Time Progress.</p>
+                <br />
+                @Html.ActionLink("GET STARTED NOW", "Register", "Membership", null, new { @class = "btn-white btn-white-brown" })
+            </div>
+        </div>
+        @*<div class="item home-backcolor-sea jumbotron active home-carousel-height">
+        <div class="container margin45">
+            <h3 class="text-shadow-sea"><i class="fa fa-thumbs-up"></i>&nbsp;Challenge Your Students</h3><br />
+            <p>Keep student engaged and excited with wide range of math problems.</p>
+            <br />
+            @Html.ActionLink("SIGN UP FOR FREE", "Register", "Membership", null, new { @class = "btn-white btn-white-sea" })
+        </div>
+        </div>
+        <div class="item jumbotron home-backcolor-blue home-carousel-height">
+        <div class="container margin45">
+            <h3 class="text-shadow-blue"><i class="fa fa-file-text"></i>&nbsp;Learning Simplified</h3><br />
+            <p>A Simple Step-by-Step Process that Allows Students to Learn at their Own Pace.</p>
+            <br />
+            @Html.ActionLink("SIGN UP FOR FREE", "Register", "Membership", null, new { @class = "btn-white btn-white-blue" })
+        </div>
+    </div>*@
+     @*<div class="item home-backcolor-sea jumbotron home-carousel-height">
+            <div class="container margin45">
+                <h3 class="text-shadow-sea"><i class="fa fa-calendar"></i>&nbsp;HAPPY NEW YEAR!</h3><br />
+                <br />
+                <br />
+                @Html.ActionLink("PRACTICE A MATH SKILL", "Register", "Membership", null, new { @class = "btn-white btn-white-sea" })
+            </div>
+        </div>*@
+    </div>
+    <a class="carousel-home left" href="#myCarousel" data-slide="prev">‹</a>
+    <a class="carousel-home right" href="#myCarousel" data-slide="next">›</a>
+</div>

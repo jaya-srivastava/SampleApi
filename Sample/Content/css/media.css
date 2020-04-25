@@ -1,0 +1,191 @@
+﻿
+@media (max-width: 780px) {
+    .rating_box {
+        padding: 8px 0 0 0;
+        width: 500px !important;
+        /*margin-left: 30px;*/
+    }
+}
+
+@media (max-width: 520px) {
+    .rating_box {
+        padding: 8px 0 0 0;
+        width: 400px !important;
+        /*margin-left: 30px;*/
+    }
+}
+
+@media (max-width: 400px) {
+    .rating_box {
+        padding: 8px 0 0 0;
+        width: 300px !important;
+        /*margin-left: 30px;*/
+    }
+}
+
+@media screen and (min-width: 150px) and (max-width: 300px) {
+    .rating_box {
+        padding: 8px 0 0 0;
+        width: 150px !important;
+       /*margin-left: 30px;*/
+    }
+}
+
+
+@media (max-width:979px) {
+    .social_icons_bx {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+    .foot_hed {
+        font-size: 14px;
+    }
+
+    .foot_links a {
+        font-size: 12px;
+    }
+
+    .contact_map {
+        margin: 0;
+        float: none;
+    }
+
+    .carrott, .caret {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .rights {
+        width: auto;
+    }
+
+    .register_input {
+        width: 240px;
+    }
+
+    .contact_map {
+        margin: 0;
+        float: none;
+    }
+
+    .que_bg h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .carrott, .caret {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    #star {
+        /* max-width: 300px;*/
+    }
+
+    .grades {
+        width: 270px;
+        margin-top: 3px;
+    }
+
+    .grade_link li a {
+        padding: 3px 4px;
+    }
+    /*.grade_link {width:240px;}*/
+    .grade_link .btn-large {
+        font-size: 13px;
+    }
+
+    .login-btn .btn {
+        padding: 1px 6px;
+        font-size: 12px;
+    }
+
+    .register_input {
+        width: 240px;
+    }
+
+    .contact_map {
+        margin: 0;
+        float: none;
+    }
+
+    .que_bg h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .carrott, .caret {
+        display: none;
+    }
+}
+
+
+@media print {
+    * {
+        background: transparent !important;
+        color: black !important;
+        text-shadow: none !important;
+        filter: none !important;
+        -ms-filter: none !important;
+    }
+    /* Black prints faster: h5bp.com/s */
+    a, a:visited {
+        text-decoration: underline;
+    }
+
+        a[href]:after {
+            content: " (" attr(href) ")";
+        }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+        content: "";
+    }
+    /* Don't show links for images, or javascript/internal links */
+    pre, blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+    /* h5bp.com/t */
+    tr, img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2, h3 {
+        page-break-after: avoid;
+    }
+
+    .social_icons_bx, .mainMenuCss, .footer_1, .login-btn, .grades {
+        display: none !important;
+    }
+
+    .dropdown-menu {
+        display: none !important;
+    }
+}

@@ -1,0 +1,410 @@
+﻿
+.label {
+    background-color: #ABBAC3 !important;
+    border-radius: 0 0 0 0;
+    font-size: 11px;
+    font-weight: normal;
+    padding: 1px 5px 3px;
+    text-shadow: none;
+}
+
+.rememberme-label
+{
+    font-weight:normal;
+}
+
+    .label[class*="span"][class*="arrow"] {
+        min-height: 0;
+    }
+
+.badge {
+    background-color: #ABBAC3 !important;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 15px;
+    padding-bottom: 3px;
+    padding-top: 1px;
+    text-shadow: none;
+}
+
+.label-transparent, .badge-transparent {
+    background-color: transparent !important;
+}
+
+.label-grey, .badge-grey {
+    background-color: #A0A0A0 !important;
+}
+
+.label-info, .badge-info {
+    background-color: #3A87AD !important;
+}
+
+.label-primary, .badge-primary {
+    background-color: #2283C5 !important;
+}
+
+.label-success, .badge-success {
+    background-color: #82AF6F !important;
+}
+
+.label-important, .badge-important {
+    background-color: #D15B47 !important;
+}
+
+.label-inverse, .badge-inverse {
+    background-color: #333333 !important;
+}
+
+.label-warning, .badge-warning {
+    background-color: #F89406 !important;
+}
+
+.label-pink, .badge-pink {
+    background-color: #3A87AD !important;
+}
+
+.label-purple, .badge-purple {
+    background-color: #9585BF !important;
+}
+
+.label-yellow, .badge-yellow {
+    background-color: #FEE188 !important;
+}
+
+.label-light, .badge-light {
+    background-color: #E7E7E7 !important;
+}
+
+.badge-yellow, .label-yellow {
+    border-color: #FEE188;
+    color: #996633 !important;
+}
+
+.badge-light, .label-light {
+    color: #888888 !important;
+}
+
+.label.arrowed, .label.arrowed-in {
+    margin-left: 9px;
+    position: relative;
+}
+
+    .label.arrowed:before, .label.arrowed-in:before {
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-top-colors: none;
+        border-color: transparent #ABBAC3 transparent transparent;
+        border-image: none;
+        border-style: solid;
+        border-width: 9px 7px;
+        content: "";
+        display: inline-block;
+        left: -14px;
+        position: absolute;
+        top: 0;
+    }
+
+    .label.arrowed-in:before {
+        border-bottom-color: #ABBAC3;
+        border-left-color: transparent !important;
+        border-right-color: #ABBAC3;
+        border-top-color: #ABBAC3;
+        left: -9px;
+    }
+
+.label.arrowed-right, .label.arrowed-in-right {
+    margin-right: 9px;
+    position: relative;
+}
+
+    .label.arrowed-right:after, .label.arrowed-in-right:after {
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-top-colors: none;
+        border-color: transparent transparent transparent #ABBAC3;
+        border-image: none;
+        border-style: solid;
+        border-width: 9px 7px;
+        content: "";
+        display: inline-block;
+        position: absolute;
+        right: -14px;
+        top: 0;
+    }
+
+    .label.arrowed-in-right:after {
+        border-bottom-color: #ABBAC3;
+        border-left-color: #ABBAC3;
+        border-right-color: transparent !important;
+        border-top-color: #ABBAC3;
+        right: -9px;
+    }
+
+.label-info.arrowed:before {
+    border-right-color: #3A87AD;
+}
+
+.label-info.arrowed-in:before {
+    border-color: #3A87AD;
+}
+
+.label-info.arrowed-right:after {
+    border-left-color: #3A87AD;
+}
+
+.label-info.arrowed-in-right:after {
+    border-color: #3A87AD;
+}
+
+.label-primary.arrowed:before {
+    border-right-color: #2283C5;
+}
+
+.label-primary.arrowed-in:before {
+    border-color: #2283C5;
+}
+
+.label-primary.arrowed-right:after {
+    border-left-color: #2283C5;
+}
+
+.label-primary.arrowed-in-right:after {
+    border-color: #2283C5;
+}
+
+.label-success.arrowed:before {
+    border-right-color: #82AF6F;
+}
+
+.label-success.arrowed-in:before {
+    border-color: #82AF6F;
+}
+
+.label-success.arrowed-right:after {
+    border-left-color: #82AF6F;
+}
+
+.label-success.arrowed-in-right:after {
+    border-color: #82AF6F;
+}
+
+.label-warning.arrowed:before {
+    border-right-color: #F89406;
+}
+
+.label-warning.arrowed-in:before {
+    border-color: #F89406;
+}
+
+.label-warning.arrowed-right:after {
+    border-left-color: #F89406;
+}
+
+.label-warning.arrowed-in-right:after {
+    border-color: #F89406;
+}
+
+.label-important.arrowed:before {
+    border-right-color: #D15B47;
+}
+
+.label-important.arrowed-in:before {
+    border-color: #D15B47;
+}
+
+.label-important.arrowed-right:after {
+    border-left-color: #D15B47;
+}
+
+.label-important.arrowed-in-right:after {
+    border-color: #D15B47;
+}
+
+.label-inverse.arrowed:before {
+    border-right-color: #333333;
+}
+
+.label-inverse.arrowed-in:before {
+    border-color: #333333;
+}
+
+.label-inverse.arrowed-right:after {
+    border-left-color: #333333;
+}
+
+.label-inverse.arrowed-in-right:after {
+    border-color: #333333;
+}
+
+.label-pink.arrowed:before {
+    border-right-color: #D6487E;
+}
+
+.label-pink.arrowed-in:before {
+    border-color: #D6487E;
+}
+
+.label-pink.arrowed-right:after {
+    border-left-color: #3A87AD;
+}
+
+.label-pink.arrowed-in-right:after {
+    border-color: #D6487E;
+}
+
+.label-purple.arrowed:before {
+    border-right-color: #9585BF;
+}
+
+.label-purple.arrowed-in:before {
+    border-color: #9585BF;
+}
+
+.label-purple.arrowed-right:after {
+    border-left-color: #9585BF;
+}
+
+.label-purple.arrowed-in-right:after {
+    border-color: #9585BF;
+}
+
+.label-yellow.arrowed:before {
+    border-right-color: #FEE188;
+}
+
+.label-yellow.arrowed-in:before {
+    border-color: #FEE188;
+}
+
+.label-yellow.arrowed-right:after {
+    border-left-color: #FEE188;
+}
+
+.label-yellow.arrowed-in-right:after {
+    border-color: #FEE188;
+}
+
+.label-light.arrowed:before {
+    border-right-color: #E7E7E7;
+}
+
+.label-light.arrowed-in:before {
+    border-color: #E7E7E7;
+}
+
+.label-light.arrowed-right:after {
+    border-left-color: #E7E7E7;
+}
+
+.label-light.arrowed-in-right:after {
+    border-color: #E7E7E7;
+}
+
+.label-grey.arrowed:before {
+    border-right-color: #A0A0A0;
+}
+
+.label-grey.arrowed-in:before {
+    border-color: #A0A0A0;
+}
+
+.label-grey.arrowed-right:after {
+    border-left-color: #A0A0A0;
+}
+
+.label-grey.arrowed-in-right:after {
+    border-color: #A0A0A0;
+}
+
+.label-large {
+    font-size: 15px;
+    line-height: 40px;
+    padding:6px 1px 8px 3px;
+}
+
+
+
+.label-large.arrowed, .label-large.arrowed-in {
+    margin-left: 12px;
+}
+
+    .label-large.arrowed:before, .label-large.arrowed-in:before {
+        border-width: 11px 8px;
+        left: -16px;
+    }
+
+    .label-large.arrowed-in:before {
+        left: -12px;
+    }
+
+.label-large.arrowed-right, .label-large.arrowed-in-right {
+    margin-right: 11px;
+}
+
+    .label-large.arrowed-right:after, .label-large.arrowed-in-right:after {
+        border-width: 16px 8px 15px 8px;
+        right: -16px;
+    }
+
+    .label-large.arrowed-in-right:after {
+        right: -12px;
+    }
+
+
+
+.result
+{
+    color: green;
+    font-size: 14px;    
+}
+
+.ErrorOccurs {
+    color: red;
+    font-size: 14px;
+}
+
+.worksheet-Links {
+    font-size:1.4em !important;
+    color:#e67e22 ;
+}
+.worksheet-Links:hover {
+    text-decoration:none;
+    color:#c5791d !important;
+}
+.margin_top_6 {
+    margin:6px 0 0 0;
+}
+
+/*custom google search css*/
+.btn-border-radius {
+    border-radius :0px !important;
+}
+
+.form-control-width {
+    width:108% !important;
+}
+
+.close-Worksheet {
+    margin-top:8px;
+    cursor:pointer;
+}
+
+.a-grades {
+    color:#c35d01;
+}
+
+.a-grades:hover {
+    color:orangered;
+}
+
+/*css for graph of plynomial functions*/
+
+.img-responsive-custom img {
+    
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+
+}

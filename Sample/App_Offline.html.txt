@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Under maintenance</title>
+    <style type="text/css">
+        .service
+        {
+            margin-bottom: 10px;
+            margin: 180px;
+            padding: 20px 20px 20px 20px;
+            border-radius: 2px 2px 2px 2px;
+            box-shadow: 0 0 8px #DDDDDD;
+            height: 240px;
+        }
+
+            .service p
+            {
+                text-align: center;
+                font-size: 20px;
+                line-height: 1;
+            }
+
+            .service h1
+            {
+                text-align: center;
+                color: #8AB90C;
+            }
+
+            .service:hover
+            {
+                background: none repeat scroll 0 0 #FCFCFC;
+                transition: box-shadow 0.2s ease-in-out 0s;
+            }
+    </style>
+</head>
+<body onload="JavaScript:timedRefresh(300000);">
+    <div class="service">
+	 <p><a href="http://www.iPracticeMath.com">
+          <img src="http://www.ipracticemath.com/Content/images/logo.png" alt="Sorry for inconvience" style="height: 30px;" /></a></p>
+        <h1>iPracticeMath.com is Under maintenance</h1>
+        <p>Thanks For your patience</p>
+        <p>We will be available soon for you.</p>
+    </div>
+</body>
+</html>
+<script type="text/JavaScript">
+function timedRefresh(timeoutPeriod) {
+	setTimeout("location.reload(true);",timeoutPeriod);
+}
+</script>

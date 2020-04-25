@@ -1,0 +1,165 @@
+﻿@model Sample.Models.DTO.GradeDetailDto
+@functions
+{
+        string GetTitle(int gradeId, string gradeDesc, string gradeInText)
+        {
+            var title = String.Format("{1} grade math | iPracticeMath", gradeDesc, gradeInText);    
+            var titleGrade1 = @"1st Grade Addition and Subtraction  | iPracticeMath";
+            var titleGrade2 = @"2nd Grade Addition and Subtraction | iPracticeMath";
+            var titleGrade3 = @"3rd Grade Multiplication, Addition and Subtraction  | iPracticeMath";
+            var titleGrade4 = @"4th Grade Multiplication and Division | iPracticeMath";
+            var titleGrade5 = @"5th Grade Fractions, Prime Numbers and LCM | iPracticeMath";
+            var titleGrade6 = @"6th Grade Pre-Algebra, Integers and Variables | iPracticeMath";
+            var titleGrade7 = @"7th Grade Algebra, Algebra-1 | iPracticeMath";
+            var titleGrade8 = @"8th Grade Algebra, Geometry and Algebra-2  | iPracticeMath";
+            var titleGrade9 = @"9th Grade Trigonometry, Algebra & 3d Geometry   | iPracticeMath";
+            var titleGrade10 = @"10th Grade math Algebra-2 and Calculus  | iPracticeMath";
+            switch (gradeId)
+            {
+                case 1: title = titleGrade1; break;
+                case 2: title = titleGrade2; break;
+                case 3: title = titleGrade3; break;
+                case 4: title = titleGrade4; break;
+                case 5: title = titleGrade5; break;
+                case 6: title = titleGrade6; break;
+                case 7: title = titleGrade7; break;
+                case 8: title = titleGrade8; break;
+                case 9: title = titleGrade9; break;
+                case 10: title = titleGrade10; break;
+                default:
+                    break;
+            }
+            return title;
+        }
+}
+@{
+    int gradeId = ViewBag.GradeId;
+    var gradeInText = gradeId == -1 ? "Pre-k" : (gradeId == 0 ? "KG" : (gradeId == 1 ? "1st" : (gradeId == 2 ? "2nd" : (gradeId == 3 ? "3rd" : gradeId + "th"))));
+
+    string gradeDesc = "";
+    string gradeDescWords = string.Empty;
+    switch (gradeId)
+    {
+        case -1: gradeDescWords = "pre-k"; break;
+        case 0: gradeDescWords = "Kindergarten"; break;
+        case 1: gradeDescWords = "first"; break;
+        case 2: gradeDescWords = "second"; break;
+        case 3: gradeDescWords = "third"; break;
+        case 4: gradeDescWords = "fourth"; break;
+        default:
+            gradeDescWords = gradeId.ToString();
+            break;
+    }
+
+
+    if (Model != null)
+    {
+        //3rd grade math, 3rd grade math practice, 3rd grade math worksheets, 3rd grade math problems,
+        //third grade math problems, 3rd grade algebra problems, 3rd grade math practice test
+        //09/27/2015 - ViewBag.Title = String.Format("{1} grade math - {1} grade math worksheet - iPracticeMath.com", Model.GradeDesc, grade);
+	    //08/7/2016  - ViewBag.Title = String.Format("{1} grade math | iPracticeMath.com", Model.GradeDesc, grade);
+        ViewBag.Title = GetTitle(gradeId,gradeDesc,gradeInText);
+        gradeDesc = Model.GradeDesc;
+        if (gradeId != 0 && gradeId != -1)
+        {
+            ViewBag.MetaDescription = String.Format("Are you having trouble with {0} Grade Math? Let us help you with your {0} Grade Math Problems here on ipracticeMath. Check it out!!", gradeInText);
+            ViewBag.Keywords = String.Format(@"{0} grade math, {0} grade math practice, {0} grade math worksheets,  {1} grade math problems, {0} grade algebra problems, {0} grade math practice test", gradeInText, gradeDescWords);
+        }
+        else //math for KG, KG math practice, preschool math worksheets, KG math activities
+        {
+            ViewBag.MetaDescription = String.Format("Is your kid/student facing problem in {0} Math? Let us help you with your {0} Math Problems here on ipracticeMath. Check it out!!", gradeInText);
+            ViewBag.Keywords = String.Format(@"math for {0},{0} math practice, preschool math worksheets,{1} math practice, {0} math activities", gradeDescWords, gradeInText);
+        }
+        ViewBag.TwitterDesc = String.Format("{0} - Fun online learning Math for kids to master the Addition, Subtract, Multiply, Division, Algebra etc.", Model.GradeDesc);
+    }
+    else
+    {
+        ViewBag.Title = string.Format("Math Practice for Grade {0} | iPracticeMath", gradeId);
+        ViewBag.MetaDescription = string.Format("Fun learning Math for Students of Grade {0} using step-by-step process in Topics like Add, Subtract, Multiply, Division, Algebra etc.", gradeId);
+        gradeDesc = gradeId.ToString();
+    }
+}
+
+<div class="row">
+    <div class="col-sm-8 col-md-8">
+        <ul class="breadcrumb">
+            <li>@Html.MicrodataActionLink("Home", @Url.Action("Index", "Home").ToString())</li>
+            <li>@Html.MicrodataActionLink("Grades", @Url.Action("Index", "Grade").ToString())</li>
+            <li>@gradeDesc</li>
+        </ul>
+    </div>
+</div>
+<div class="">
+    <div class="headline">
+        <div class="row">
+            <div class="col-sm-8 col-md-8">
+                @if (Model != null)
+                {
+                    <h1 class="heading-sm color-brown">@gradeInText Grade Math</h1>
+                }
+                else
+                { 
+                    <h1 class="heading-sm color-brown">Grade - @gradeDesc Math (Coming Soon)</h1>
+                }
+            </div>
+            <div class="col-sm-4 col-md-4">
+                @Html.Partial("_addThisPartial")
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (Model != null && Model.Topics != null && Model.Topics.Count > 0)
+{
+    @Html.Partial("~/Views/Grade/_GradesDescriptionDetailsPartial.cshtml", Model)
+}
+else
+{
+    <div class="alert fade in">
+        <div class="alert alert-warning fade in">
+            <div class="row tab-v3">
+                <div class="col-sm-12 col-md-12">
+                    <strong>Coming soon</strong> With Algebra II, Geometry and Trignometry.<br />
+                    For now, please go back to<br />
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    @Html.ActionLink("Grades & Math SKills", "Index", null, null, new { @class = "label label-large label-success arrowed-right circle-count circle-count" })<br />
+                    @Html.ActionLink("Consumer Math", "ConsumerMath", "Learn", null, new { @class = "label label-large label-success arrowed-right circle-count circle-count" })<br />
+                </div>
+                <div class="col-sm-4 col-md-4 ">
+                    @Html.ActionLink("Algebra", "Algebra", "Learn", new { id = "Algebra_Definition", area = "" }, new { @class = "label label-large label-success arrowed-right circle-count circle-count", id = "", area = "" })<br />
+                    @Html.ActionLink("Calculus", "Calculus", "Learn", new { id = "Limits", area = "" }, new { @class = "label label-large label-success arrowed-right circle-count circle-count", id = "", area = "" })<br />
+                </div>
+            </div>
+        </div>
+        @* <div class="row margin-bottom-30 def InformationBox gradesNotification ">
+                <div class="row tab-v3">
+                    <div class="col-sm-2 col-md-2">
+                        <h2>Grade 10 : </h2>
+                    </div>
+                    <div class="col-sm-10 col-md-10">
+                        iPracticeMath provides a platform, which consists of a variety of worksheets that are simple yet challenging. Grade 10 students can access the relevant math syllabus, which caters all the topics necessary for their learning.
+                                <p class="gradesNotif">
+                                    a) Unlimited lessons on algebra II, trigonometry and geometry.<br />
+                                    b) Students will acquire new ways of learning difficult and stressful topics.<br />
+                                    c) Worksheets will train students in skillful use of topics like consumer math, algebra and calculus.
+                                <br />
+                                </p>
+                    </div>
+                </div>
+            </div>     *@
+        @Html.Partial("_GradeNotification", new Sample.Models.DTO.FeedbackDto())
+    </div>
+    @Html.Partial("_addThisPartial")
+}
+
+
+@Html.Partial("~/Views/Grade/_GradeLinks.cshtml", Model)
+<br />
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0024/9090.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+

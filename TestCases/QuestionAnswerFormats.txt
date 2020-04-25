@@ -1,0 +1,27 @@
+Types of Question Answer Formats--
+1)Multi Choice
+    http://dev2.imath.io/math-problem/exponent/8326
+	http://dev2.imath.io/math-problem/number-sense/even-odd	
+	http://dev2.imath.io/math-problem/comparing/comparing-numbers-upto-100
+2)FIB
+	http://dev2.imath.io/math-problem/decimal-elementary/2108
+	http://dev2.imath.io/math-problem/algebra/write-variable-expression-for-subtraction
+3)MathQuill FIB
+    http://dev2.imath.io/math-problem/fraction-elementary/2006
+  
+4)Multi Choice Button
+    http://dev2.imath.io/math-problem/decimal-elementary/2103
+5)Drag N Drop
+  http://dev2.imath.io/math-problem/comparing/ascending-order-of-numbers-upto-10
+6) Multi textbox format
+	http://dev2.imath.io/math-problem/fraction-elementary/2003
+	http://dev2.imath.io/math-problem/algebra/6055
+7) Show unit
+	http://dev2.imath.io/math-problem/decimal-mi/convert-decimal-to-percent-easy
+8) Question Answer Together
+	http://dev2.imath.io/math-problem/comparing/compare-equations-using-subtraction
+	http://dev2.imath.io/math-problem/comparing/compare-equations-using-addition
+	
+	
+	
+	http://www.ipracticemath.com/math-problem/decimal/comparing-decimals

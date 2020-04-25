@@ -1,0 +1,741 @@
+/*from AlgebraStyle.css*/
+.answer_heading {
+    font-weight: bold;
+    color: #7231A2;
+}
+
+.sotion_bold {
+    color: #28A6F1;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.solution_proc {
+    margin-left: 200px;
+}
+
+.sotion_green_proc {
+    font-weight: bold;
+    color: #007D3F;
+}
+
+.some_quick_tips h4, .some_quick_tips h3 {
+    font: bold 16px Arial, Helvetica, sans-serif;
+    color: #8ab90c;
+    padding: 15px 0 0 0;
+}
+
+/*From Learn.css*/
+
+.wrap .container .menu {
+    margin-top: 20px;
+    width: 1014px;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+    .wrap .container .menu ul {
+        text-decoration: none;
+        list-style: none;
+    }
+
+        .wrap .container .menu ul li {
+            display: block inline;
+            float: left;
+            border-right: 1px solid #000;
+            padding: 5px 8px;
+        }
+
+            .wrap .container .menu ul li a {
+                color: #fff;
+                text-decoration: none;
+                list-style: none;
+            }
+
+                .wrap .container .menu ul li a:hover {
+                    color: #F00;
+                }
+
+                .wrap .container .menu ul li a.active {
+                    color: #F00;
+                }
+
+            .wrap .container .menu ul li.last {
+                border-right-color: #000;
+            }
+
+.calculus {
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000;
+    line-height: 24px;
+    text-align: justify;
+}
+
+    .calculus .function-center {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #F00;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .calculus .function {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .calculus hr {
+        background: #aaa;
+        height: 3px;
+    }
+
+    .calculus p, .function, .calculus {
+        padding: 0 0 0 15px;
+    }
+
+        .calculus h3, .calculus h2 {
+            color: #28A6F1;
+            font: bold 16px Arial, Helvetica, sans-serif;
+            color: #8ab90c;
+            padding: 15px 0 0 15px;
+        }
+
+        .calculus h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 188%;
+            color: #1086cc;
+            font-weight: bold;
+            line-height: 36px;
+            padding: 0 0 0 15px;
+        }
+
+#padding_1 {
+    padding: 9px 127px 10px 5px;
+}
+
+body#what_is_algebra a#padding_1 {
+    color: #0579BE;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px 2px #E3E3E3;
+}
+
+#padding_2 {
+    padding: 9px 190px 10px 5px;
+}
+
+body#everyday_life a#padding_2 {
+    color: #0579BE;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px 2px #E3E3E3;
+}
+
+#padding_3 {
+    padding: 9px 112px 10px 5px;
+}
+
+body#basic_terms a#padding_3 {
+    color: #0579BE;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px 2px #E3E3E3;
+}
+
+#padding_4 {
+    padding: 9px 147px 10px 5px;
+}
+
+body#sovling_method a#padding_4 {
+    color: #0579BE;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px 2px #E3E3E3;
+}
+
+#padding_5 {
+    padding: 9px 114px 10px 5px;
+}
+
+body#quick_tips a#padding_5 {
+    color: #0579BE;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px 2px #E3E3E3;
+}
+
+#padding_6 {
+    padding: 9px 245px 10px 5px;
+}
+
+body#differnent_type_result a#padding_6 {
+    color: #0579BE;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px 2px #E3E3E3;
+}
+
+#padding_7 {
+    padding: 9px 121px 10px 5px;
+}
+
+body#linear_equcation a#padding_7 {
+    color: #0579BE;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px 2px #E3E3E3;
+}
+
+#padding_8 {
+    padding: 9px 216px 10px 5px;
+}
+
+body#linear_equcation a#padding_8 {
+    color: #0579BE;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px 2px #E3E3E3;
+}
+
+#padding_9 {
+    padding: 9px 30px 10px 5px;
+}
+
+body#linear_equcation a#padding_9 {
+    color: #0579BE;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px 2px #E3E3E3;
+}
+
+
+.function h3 {
+    padding: 0;
+}
+
+/*--------------------------------------- Css classes used in learn fraction and decimals-----------------------------------------------*/
+
+
+/*fraction css*/
+.border_table_1px {
+    border-bottom: 1px solid #000;
+}
+
+.word_prob {
+    width: 140px;
+    margin: 132px 0 0 20px;
+}
+
+/*.division {
+    width: 135px;
+    margin: 215px 0 0 -48px;
+}*/
+
+
+/********** LEARN DETAIL PAGE : Trigonometry and Geometry **************/
+
+.learn-detail-page h1 {
+    color: #1086CC !important;
+    font-size: 30.5px !important;
+}
+
+.learn-detail-page h2 {
+    color: #8AB90C !important;
+    font-size: 24.5px !important;
+}
+
+.learn-detail-page h3 {
+    color: #B11111 !important;
+    font-family: Monotype Corsiva !important;
+    font-size: 28.5px !important;
+}
+
+.learn-detail-page h5 {
+    color: #FFA500 !important;
+    font-size: 14px !important;
+}
+
+.learn-detail-page .main-ans strong {
+    color: #000000 !important;
+    font-size: 14px !important;
+}
+
+.learn-detail-page .main-ans {
+    color: #FF0000 !important;
+    font-size: 16px !important;
+    font-style: italic !important;
+    font-weight: normal !important;
+}
+
+.learn-detail-page p {
+    color: #333333 !important;
+    font-size: 14px !important;
+    font-style: italic !important;
+    line-height: 23px !important;
+    text-align: justify !important;
+    margin: 0 0 10px !important;
+}
+
+.learn-detail-page .ans-box {
+    background: none repeat scroll 0 0 rgba(216, 216, 255, 0.16) !important;
+    box-shadow: 5px 5px 0 rgba(190, 190, 190, 0.27) !important;
+    margin: 10px 0 30px !important;
+    padding: 20px !important;
+}
+
+.learn-detail-page .tblist {
+    margin: 0 0 15px;
+    padding: 0;
+}
+
+    .learn-detail-page .tblist li {
+        clear: both;
+        display: inherit;
+        list-style: none outside none;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+        .learn-detail-page .tblist li span {
+            color: #00B050;
+            float: left;
+            font-size: 14px;
+            margin: 0;
+            max-width: 150px;
+            padding: 0;
+            width: 100%;
+        }
+
+        .learn-detail-page .tblist li p {
+            float: left;
+            margin: 0;
+            max-width: 604px;
+            padding: 0;
+            width: 100%;
+        }
+
+
+
+
+/***************************** LEARN DETAIL PAGE  : Basic Math & STATISTICS************************************/
+.learn-acc .panel-body {
+    background: none repeat scroll 0 0 rgba(216, 216, 255, 0.16);
+}
+
+.learn-acc .panel-heading a {
+    background: #f5f5f5 !important;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+    .learn-acc .panel-heading a:hover {
+        text-decoration: none;
+    }
+
+.acc-home a.accordion-toggle {
+    color: #686868;
+    font-size: 14px;
+    background: none;
+    padding: 5px 15px;
+    background: #F5F5F5;
+    border-bottom: solid 1px #eee;
+    text-decoration: none !important;
+    border-left: 2px solid #D9D9D9;
+    font-weight: bold;
+}
+
+    .acc-home a.active, .acc-home a.accordion-toggle:hover {
+        color: #0579BE;
+        text-decoration: none !important;
+        border-left: 2px solid #6EAED1;
+    }
+
+.acc-home a.collapsed {
+    background-color: #EDF3F7;
+    border-left: 2px solid #6EAED1;
+    color: #0579BE;
+    font-weight: bold;
+}
+
+
+.acc-home .accordion-group {
+    border: none;
+    margin-bottom: 0 0 3px 0;
+}
+
+.acc-home .accordion-heading, .acc-home .accordion-inner {
+    border: none;
+}
+
+.acc-home .accordion-inner {
+    background: none repeat scroll 0 0 rgba(216, 216, 255, 0.16);
+    border: none;
+    padding-top: 3px;
+    margin-top: 5px;
+}
+
+.acc-home .collapse.in {
+    margin-top: -1px;
+    margin-bottom: 10px;
+    background: #fdfdfd;
+}
+/*end*/
+
+
+.definition {
+    color: #333333;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 23px;
+    text-align: justify;
+    border-bottom: 2px solid #EEEEEE;
+}
+
+.blue {
+    color: #1086CC !important;
+}
+
+.green {
+    color: #8AB90C !important;
+}
+
+.maroon {
+    color: #B11111 !important;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.font-normal {
+    font-style: normal;
+}
+
+.font_16 {
+    font-size: 16px;
+}
+
+.margin-bottom_10 {
+    margin-bottom: 10px;
+}
+
+.margin-top_35 {
+    margin-top: 35px;
+}
+
+.padding-left_15 {
+    padding-left: 15px;
+}
+
+.padding-right_15 {
+    padding-right: 15px;
+}
+
+.padding-bottom-5 {
+    padding-bottom: 5px;
+}
+
+.padding-top_15 {
+    padding-top: 15px;
+}
+
+.padding-bottom_10 {
+    padding-bottom: 10px;
+}
+
+.padding-bottom_25 {
+    padding-bottom: 25px;
+}
+
+
+h4.definition-note {
+    color: #8AB90C;
+    font: bold 15px Arial,Helvetica,sans-serif;
+    margin: 0 0 5px;
+    text-rendering: optimizelegibility;
+}
+
+h5.example {
+    color: #FFA500;
+    font: bold 14px Arial,Helvetica,sans-serif;
+    margin: 0 0 5px;
+    text-rendering: optimizelegibility;
+}
+
+p.question {
+    color: #333333;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 23px;
+    text-align: justify;
+    margin: 0 0 10px;
+}
+
+
+.main-ans {
+    color: #FF0000;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+    .main-ans strong {
+        color: #000000;
+        font-size: 14px;
+        vertical-align: top;
+    }
+
+.answer-icon {
+    width: 45px;
+    height: 24px;
+    display: inline-block;
+    background-position: 0 0;
+    background: url('/content/images/success.png');
+    background-repeat: no-repeat;
+}
+
+.info-icon {
+    width: 45px;
+    height: 50px;
+    background-position: 0 0;
+    display: inline-block;
+    background: url('/content/images/information2.png');
+    background-repeat: no-repeat;
+}
+
+.info-text {
+    position: absolute;
+    margin-top: 2.5%;
+}
+
+.ans-box {
+    padding: 20px;
+}
+
+    .ans-box .left-block {
+        width: 64%;
+        float: left;
+    }
+
+        .ans-box .left-block span {
+            width: 45%;
+            float: left;
+        }
+
+    .ans-box .right-block {
+        width: 34%;
+        margin-left: 65%;
+    }
+
+ul.bullet {
+    list-style: disc;
+}
+
+.section_heading {
+    color: #B11111;
+    font-family: Monotype Corsiva;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.vertical-white-space_125 {
+    height: 125px;
+    display: block;
+}
+
+.vertical-white-space_105 {
+    height: 105px;
+    display: block;
+}
+
+.vertical-white-space_75 {
+    height: 75px;
+    display: block;
+}
+
+.vertical-white-space_50 {
+    height: 50px;
+    display: block;
+}
+
+.nopadding {
+    padding: 0 !important;
+}
+
+
+/****************** Social Media On Learn Detail Pages***************************/
+ul.social-like-button {
+    list-style-type: none;
+    margin: 10px 0 25px 25px;
+}
+
+    ul.social-like-button li {
+        display: inline;
+        padding: 5px;
+    }
+
+/****************** Social Media On menu patrial views Learns folder ***************************/
+.menu-attributes {
+    /*width: 400px;*/
+    height: 60px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.blog-twitter .headline h2 {
+    border-bottom: 2px solid #e67e22 !important;
+}
+
+.blog-twitter .tab-v2 .nav-tabs li.active a {
+    border-top: solid 2px #e67e22 !important;
+}
+
+.blog-twitter .blog-twitter-inner a {
+    color: #e67e22 !important;
+    text-decoration: none;
+}
+
+.blog-twitter .blog-twitter-inner:hover {
+    border-color: #e67e22 !important;
+    border-top-color: #e67e22 !important;
+}
+
+    .blog-twitter .blog-twitter-inner:hover:after {
+        border-top-color: #e67e22 !important;
+    }
+/*css for Foil method page*/
+
+.font_10 {
+    font-size: 12px;
+    padding-left: 190px;
+}
+
+.padding_left_150 {
+    font-size: 12px;
+    padding-left: 120px;
+}
+
+.table table-striped {
+    background: none repeat scroll 0 0 #0f3d6b;
+    color: white;
+    /*border:1px solid #3498db;*/
+}
+
+
+.table-row-color{
+    background: repeat scroll 0 0 #ffffff;
+    color: black;
+    border:1px solid #ccdef0 !important;
+}
+
+.table_bg
+{
+    background: repeat scroll 0 0 #1abc9c;
+    color: white;    
+}
+.text-overline {
+    text-decoration: line-through;
+}
+
+/*Blog Latest Tweets*/
+.blog-twitter .blog-twitter-inner {
+    padding: 10px;
+    background: #f7f7f7;
+    position: relative;
+    margin-bottom: 10px;
+    /*border-top: solid 2px #eee;*/
+}
+
+    .blog-twitter .blog-twitter-inner,
+    .blog-twitter .blog-twitter-inner:after,
+    .blog-twitter .blog-twitter-inner:before {
+        transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+    }
+
+        .blog-twitter .blog-twitter-inner:after,
+        .blog-twitter .blog-twitter-inner:before {
+            width: 0;
+            height: 0;
+            right: 0px;
+            bottom: 0px;
+            content: " ";
+            display: block;
+            position: absolute;
+        }
+
+        .blog-twitter .blog-twitter-inner:after {
+            border-top: 15px solid #eee;
+            border-right: 15px solid transparent;
+            border-left: 0px solid transparent;
+            border-left-style: inset; /*FF fixes*/
+            border-right-style: inset; /*FF fixes*/
+        }
+
+        .blog-twitter .blog-twitter-inner:before {
+            border-bottom: 15px solid #fff;
+            border-right: 0 solid transparent;
+            border-left: 15px solid transparent;
+            border-left-style: inset; /*FF fixes*/
+            border-bottom-style: inset; /*FF fixes*/
+        }
+
+        .blog-twitter .blog-twitter-inner:hover {
+            border-color: #72c02c;
+            border-top-color: #72c02c;
+        }
+
+            .blog-twitter .blog-twitter-inner:hover:after {
+                border-top-color: #72c02c;
+            }
+
+        .blog-twitter .blog-twitter-inner span.twitter-time {
+            color: #777;
+            display: block;
+            font-size: 11px;
+        }
+
+        .blog-twitter .blog-twitter-inner a {
+            color: #72c02c;
+            text-decoration: none;
+        }
+
+            .blog-twitter .blog-twitter-inner a:hover {
+                text-decoration: underline;
+            }
+
+        .blog-twitter .blog-twitter-inner i.fa {
+            top: 2px;
+            color: #bbb;
+            font-size: 18px;
+            position: relative;
+        }
+
+/*li, p {
+    color: black;
+}*/
+
+.box {
+    border: solid 1px;
+    width:70%;
+}
+
+.box-heading {
+    vertical-align: middle;
+    height: auto;
+    color: white;
+    font-size: 1.4em;
+    border-right: solid 1px black;
+}
+
+.color-black {
+    color:black !important;
+}
+
+.v-align-middle {
+    vertical-align:middle;
+    width:40%;
+}
+
+
+.table-border-green {
+   border:2px solid #72c02c !important;
+}

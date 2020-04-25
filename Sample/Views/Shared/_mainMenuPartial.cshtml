@@ -1,0 +1,39 @@
+﻿<ul class="nav nav-pills mainMenuCss">
+    <li class="dropdown">
+        <b class="caret carrott main-menu-css" data-toggle="dropdown"></b>
+        <a class="dropdown-toggle width-95" id="drop1" role="button" href="/math-practice">Math Practice</a>
+        <ul id="menu1" class="dropdown-menu" aria-labelledby="drop1">
+            <li>@Html.ActionLink("Additions", "Details", "Topic", new { id = "Addition", area = "" }, null)</li>
+            <li>@Html.ActionLink("Subtractions", "Details", "Topic", new { id = "Subtraction", area = "" }, null)</li>
+            <li>@Html.ActionLink("Multiplication", "Details", "Topic", new { id = "Multiplication", area = "" }, null)</li>
+            <li>@Html.ActionLink("Division", "Details", "Topic", new { id = "Division", area = "" }, null)</li>
+            <li>@Html.ActionLink("Algebra", "Details", "Topic", new { id = "Algebra", area = "" }, null)</li>
+            <li>@Html.ActionLink("Fraction", "Details", "Topic", new { id = "Fraction", area = "" }, null)</li>
+            <li>@Html.ActionLink("Decimal", "Details", "Topic", new { id = "Decimal", area = "" }, null)</li>
+            <li>@Html.ActionLink("Numbers", "Details", "Topic", new { id = "Number-Sense", area = "" }, null)</li>
+            <li>@Html.ActionLink("Measurement", "Details", "Topic", new { id = "Measurement", area = "" }, null)</li>
+            <li>@Html.ActionLink("Time", "Details", "Topic", new { id = "Time", area = "" }, null)</li>
+           <li>@Html.ActionLink("Statistics", "Details", "Topic", new { id = "Statistics", area = "" }, null)</li>          
+        </ul>
+    </li>
+
+     <li>
+        @Html.ActionLink("Learn", "Index", "Learn", new { area = "" }, new { @class = "", id = "drop2", role = "button", data_toggle = "" })
+    </li>
+
+    <li>
+        @Html.ActionLink("WorkSheets", "Index", "Sheet", new { area = "" }, new { @class = "", id = "drop3", role = "button", data_toggle = "" })
+    </li>
+
+    <li>
+        @Html.ActionLink("Reports", "Index", "Reports", new { area = "" }, new { @class = "", id = "drop4", role = "button", data_toggle = "" })
+    </li>
+    <li>
+        <a href="/math-practice/Algebra">Algebra</a>
+    </li>
+    <li>
+        <a href="/math-practice/Comparing">Comparing<sup class="label label-success">New</sup></a>
+    </li>
+
+</ul>
+

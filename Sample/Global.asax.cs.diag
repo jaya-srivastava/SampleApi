@@ -1,0 +1,71 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using System.Web;
+using System.Web.Http;
+using System.Web.Mvc;
+using System.Web.Optimization;
+using System.Web.Routing;
+using iPractice.Repository;
+using StackExchange.Profiling;
+
+namespace iPractice
+{
+	// Note: For instructions on enabling IIS6 or IIS7 classic mode, 
+	// visit http://go.microsoft.com/?LinkId=9394801
+
+	public class MvcApplication : System.Web.HttpApplication
+	{
+        protected void Application_BeginRequest()
+        {
+            if (Request.IsLocal)
+            {
+                MiniProfiler.Start();
+            }
+        }
+        protected void Application_EndRequest()
+        {
+            MiniProfiler.Stop();
+        }
+
+		protected void Application_Start()
+		{
+			//AppDomain.CurrentDomain.SetData("SQLServerCompactEditionUnderWebHosting", true);
+			MvcHandler.DisableMvcResponseHeader = true;
+			// AreaRegistration.RegisterAllAreas();
+			// WebApiConfig.Register(GlobalConfiguration.Configuration);
+			FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+			RouteConfig.RegisterRoutes(RouteTable.Routes);
+			BundleConfig.RegisterBundles(BundleTable.Bundles);
+			AuthConfig.RegisterAuth();
+			BundleTable.EnableOptimizations = true;
+			//  Database.SetInitializer<PracticeContext>(new PracticeInitializer(new ContextHelper()));
+			ViewEngines.Engines.Clear();
+			ViewEngines.Engines.Add(new RazorViewEngine
+				{
+					 ViewLocationFormats = new string[]
+					 {
+						"~/Views/{1}/{0}.cshtml",
+						"~/Views/Learn/ConsumerMath/{0}.cshtml",
+						"~/Views/Learn/Algebra/{0}.cshtml"
+					 }
+					 ,
+					// PartialViewLocationFormats = new string[]
+					//{
+					//	"~/Views/Learn/{0}.cshtml",
+					//	"~/Views/Learn/ConsumerMath/{0}.cshtml"
+					//}
+				}
+			);
+            //HibernatingRhinos.Profiler.Appender.EntityFramework.EntityFrameworkProfiler.Initialize();
+            MiniProfilerEF.InitializeEF42(false);
+
+		}
+
+		protected void Session_Start(Object sender, EventArgs e)
+		{
+			Session["init"] = 0;
+		}
+	}
+}

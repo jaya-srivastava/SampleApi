@@ -1,0 +1,71 @@
+﻿@model iPractice.ViewModel.LoginModel
+@*<script type="text/javascript">
+    setInterval(function () { $('#QuestionSignInModal').modal('hide'); }, 3000);
+</script>*@
+<div class="col-md-12 col-sm-12">
+    <div class="modal-dialog admin-model-border">
+        <div class="modal-content border-radius-15">
+            <div class="modal-header">
+                @using (Ajax.BeginForm("SignInAjax", "Membership", FormMethod.Post, new AjaxOptions { OnBegin = "BeginLoginCommon", OnSuccess = "resultLoginCommon" }))
+                {
+                    <div class="row">
+                        @Html.ValidationSummary(true)
+                        @Html.HiddenFor(x=>x.ReturnUrl)
+                        <div class="col-md-4 col-sm-4">
+                            <div class="input-group margin-bottom-20">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-user color-red"></i>
+                                </span>
+                                @Html.TextBoxFor(m => m.UserName, new { @placeholder = "User Name/Email Address", @class = "form-control textbox-width" })
+                            </div>
+                            @Html.ValidationMessageFor(m => m.UserName)
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="input-group margin-bottom-20">
+                                <span class="input-group-addon color-aqua">
+                                    <i class="fa fa-key"></i>
+                                </span>
+                                @Html.PasswordFor(m => m.Password, new { @placeholder = "Password", @class = "form-control textbox-width" })
+                            </div>
+                            @Html.ValidationMessageFor(m => m.Password)
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <button type="submit" class="btn-u margin-right-5" id="btnLoginSubmit">Sign in</button>
+                        </div>
+                        <div class="col-md-1 col-sm-1"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></div>                        
+                        @*<div class="col-md-12 col-sm-12">
+                            <p class="row0 regErrorOccurs" id="errorOccurs">User name or Password is wrong. Please try again</p>
+                        </div>*@
+                    </div>
+                }
+            </div>
+            <div class="modal-body">
+                <div class="panel panel-orange">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="fa fa-user"></i>Become a Member. Enjoy great benefits!</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="list-unstyled">
+                            <li><i class="color-green fa fa-check"></i>&nbsp;Track progress in real-time</li>
+                            <li><i class="color-green fa fa-check"></i>&nbsp;Easy access to specialized user reports</li>
+                            <li><i class="color-green fa fa-check"></i>&nbsp;View progress history</li>
+                            <li><i class="color-green fa fa-check"></i>&nbsp;Get notified when new topics are added</li>
+                            <li><i class="color-green fa fa-check"></i>&nbsp;Quiz and additional worksheets (coming soon)</li>
+                            <li><i class="color-green fa fa-check"></i>&nbsp;Special certificates for registered users</li>
+                            <li>
+                                <br />
+                                @Html.ActionLink("Sign Up", "Register", "Membership", new { id = "" }, new { @class = "btn-u margin-right-5 margin-top-6" })
+                                <a class="btn-u btn-u-brown margin-right-5 margin-top-6" href="@Url.Action("Register","Membership",new { id = @iPractice.Helpers.Enums.Role.Teacher })">Register as teacher <i class="margin-5 fa fa-arrow-circle-right"></i></a>		<br />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="col-md-7 col-sm-7"></div>
+                <div class="col-md-5 col-sm-5">@Html.ActionLink("Forgot your Password?", "ForgotPassword", "Membership", null, new { @class = "btn-u btn-u-yellow margin-right-5" })</div>
+            </div>
+        </div>
+
+    </div>
+</div>

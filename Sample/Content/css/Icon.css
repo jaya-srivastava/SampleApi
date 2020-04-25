@@ -1,0 +1,153 @@
+﻿.fa-addition:before {
+    content:"+"; 
+}
+.fa-basicmath:before {
+    content:"\00b1";
+}
+
+.fa-subtraction:before {
+    content:"\2212"; 
+}
+
+.fa-multiplication:before {
+    content:"\00d7"; 
+}
+
+.fa-comparing:before {
+    content:"\2265"; 
+}
+
+.fa-number-system:before {
+    content: "N";    
+}
+
+.fa-number-sense:before {
+    content: "IV";    
+}
+
+.fa-trigonometry:before {
+    content: "\22BF";    
+}
+
+.fa-time:before {
+    content: "\f017";    
+}
+
+.fa-rounding:before{
+    content:"\f111";
+}
+
+.fa-fraction:before {
+    content:"\BC";
+}
+
+/*.fa-algebra:before {
+    content:"\2206"; 
+}*/
+.fa-algebra:before {
+    content:"\221Ax"; 
+}
+.fa-algebra1:before {
+    content:"\221Ax"; 
+}
+.fa-integer:before {
+    content:"Z"; 
+}
+
+.fa-division:before {
+    content:"\00f7"; 
+}
+.fa-calculus:before {
+    content:"∯"; 
+}
+
+
+
+.fa-decimal:before {
+    content:"\2022"; 
+}
+.fa-statistics:before {
+    content:"\03a3"; 
+}
+.fa-consumermath:before {
+    content:"$"; 
+}
+.fa-measurement:before
+{
+    content:"\03BC"; 
+}
+
+.fa-real-number:before{
+    content:"\2115";
+}
+
+
+.fa-rate-and-percentage:before
+{
+    content:"\0025"; 
+}
+
+.fa-ratio-and-proportion:before
+{
+    content:"\2237"; 
+}
+
+.fa-scientific-notation:before
+{
+    content:"\2237"; 
+}
+
+.fa-place-value:before
+{
+    content:"\2237"; 
+}
+
+.fa-factors-and-multiples:before
+{
+    content:"\2237"; 
+}
+
+.fa-order-of-operations-pemdas:before
+{
+    content:"\2237"; 
+}
+
+
+.fa-small {
+    font-size:1em !important;
+}
+
+.fa-vs {
+    font-size:.5em !important;
+}
+
+.font-color-white {
+    color:#fff !important;
+    font-weight:bolder !important;
+}
+
+
+.icon-small {
+    font-size:14px !important;
+    font-family:fontawesome;
+    line-height:20px !important;
+    height:22px !important;
+    width:22px !important;
+    font-style:normal;
+    padding-left:1px;
+}
+
+.fa-sm {
+    /*font-size: 1.1em;*/
+    line-height: 0.75em;
+    vertical-align: -15%;
+}
+
+color-orange {
+    color:#e67e22 !important;
+}
+
+
+
+
+

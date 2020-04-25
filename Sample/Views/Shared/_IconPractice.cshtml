@@ -1,0 +1,30 @@
+﻿@model string
+
+@helper iconLinks(string topicDesc,string colorCss)
+{
+    var iconCss="fa-"+topicDesc;
+    var eventCategory="Icons_of_"+@Model;
+    var eventLabel=@topicDesc;
+    <li>
+        <a href="@Url.Action(@topicDesc,@Model)" title="@topicDesc" onclick="trackEventByAnalystics('@eventCategory','@eventLabel')">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x @colorCss"></i>
+                <i class="fa @iconCss fa-stack-1x fa-inverse font-color-white"></i>
+            </span>&nbsp;
+        </a>
+    </li>
+}
+
+
+<ul class="list-unstyled blog-tags margin-bottom-10 text-center padding-left-60">
+    @iconLinks("addition", "color-red")
+    @iconLinks("subtraction", "color-dark-blue")
+    @iconLinks("multiplication", "color-twitter")
+    @iconLinks("division", "color-yellow")
+    @iconLinks("algebra", "color-red")
+    @iconLinks("decimal", "color-blue")
+    @iconLinks("number-sense", "color-orange")
+    @iconLinks("rounding", "color-brown")
+    @iconLinks("time", "color-green")
+    @iconLinks("fraction", "color-purple")            
+</ul>

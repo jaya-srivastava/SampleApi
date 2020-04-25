@@ -1,0 +1,311 @@
+﻿/**Questions**/
+
+.ProgressCompleted {
+    color: #0088CC;
+    font-weight: bold;
+    display: none;
+    padding-left: 10px;
+}
+
+.GotoCertificate {
+    color: black;
+    font-size: 13px;
+}
+
+.ProgressCompletedSignUp {
+    display: none;
+    padding-left: 10px;
+}
+
+
+
+.HintBox {
+    float: right;
+    color: black;
+    font-weight: bold;
+    background: none repeat scroll 0 0 #F5F5F5;
+    margin-right: 6px;
+    padding: 5px 15px 5px 10px;
+    text-align: center;
+    max-width: 200px;
+    font-size: 10px !important;
+}
+
+.rating_box {
+    padding: 0 0 0 0;
+    width: 500px !important;
+    /*margin-left: 15px;*/
+}
+
+.header {
+    font: bold 16px Arial, Helvetica, sans-serif;
+    color: #8ab90c;
+    line-height: 10px !important;
+}
+/*-----------------------------------------------------------------Question  color classes ---------------------------- */
+/*Green color*/
+.margin_15 {
+    margin-left: 15px;
+}
+
+
+/*----------------------------------------------------Sheet layout classes --------------------------------------------*/
+.back_right {
+    width: auto;
+    height: auto;
+    /*float: right;
+    margin-right: 155px;*/
+    margin-top: 20px;
+    text-align: left;
+}
+
+    .back_right a {
+        color: #333;
+        background-color: #EAEAEA;
+        /*padding: 5px 10px 5px 10px;
+        margin-left: 6px;*/
+        border-radius: 5px;
+        margin-top: 3px;
+    }
+
+        .back_right a:hover {
+            background-color: #F2F2F2;
+            text-decoration: none;
+        }
+
+
+
+.divSheetAns {
+    page-break-before: always;
+    font-size: 20px;
+}
+
+.editor-label {
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.btn-worksheet {
+    border-radius: 5px;
+    margin: 5px;
+}
+/* Radio button*/
+
+#questions_radio input[type="radio"] {
+    display: none;
+}
+
+
+    #questions_radio input[type="radio"] + span {
+        display: inline-block;
+        /*width: 19px;*/
+        height: 19px;
+        margin: -1px 4px 0 0;
+        vertical-align: middle;
+        background: url(http://image01.ipracticemath.com/content/images/un_check_radio.png) -38px top no-repeat;
+        cursor: pointer;
+    }
+
+    #questions_radio input[type="radio"]:checked + span {
+        background: url(http://image01.ipracticemath.com/content/images/check_radio_sheet.png) -57px top no-repeat;
+    }
+
+
+
+.que_div {
+    font: normal 14px Arial, Helvetica, sans-serif;
+    margin: 20px 0 0 0;
+}
+
+    .que_div span {
+        padding-left: 30px;
+    }
+
+
+
+.back_link {
+    margin: 30px 0 0 0;
+    color: #c2c1c1;
+    font: normal 12px Arial, Helvetica, sans-serif;
+}
+
+    .back_link a {
+        color: #0099FF;
+        margin: 0 10px;
+        background: url(http://image01.ipracticemath.com/content/images/sprite_01.png) no-repeat scroll -142px -75px transparent;
+        margin: 10px 0 0;
+        padding: 2px 0 1px 25px;
+        height: 20px;
+    }
+
+        .back_link a.clearlm {
+            margin: 0 10px 0 0;
+        }
+
+        .back_link a:hover {
+            text-decoration: underline;
+        }
+
+.margin-left-8 {
+    margin-left:8px;
+}
+
+/**Worsheets**/
+.widthhalf {
+    width: 80%;
+    display:block;
+    /*margin-right: 10%;*/
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin-top: 2%;
+}
+
+.margin-right-30 {
+    margin-right:11% !important;
+}
+
+
+.gray_box li a.link {
+    font: normal 110% Arial, Helvetica, sans-serif;
+    line-height: 40px;
+}
+
+.TwoRowsWorkSheet {
+    float: left;
+    margin: 0 35px 0 0;
+    width: 46%;
+}
+
+    .TwoRowsWorkSheet div {
+        line-height: 30px;
+        min-width: 50%;
+    }
+
+.validateWorksheet {
+    display: none;
+    color: red;
+    font-size: 14px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+
+/*Progress Complete Registration*/
+.regErrorOccurs {
+    color: red;
+    font-size: 14px;
+    display: none;
+}
+
+.QuestionRegister h5 {
+    text-decoration: underline;
+    color: #8AB90C;
+}
+
+.ques-txt-control {
+    display: block;
+    width: 80%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+/*Rdio button css*/
+input[type=radio ]:not(old) {
+    width: 2em;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    opacity: 0;
+}
+
+    input[type=radio ]:not(old) + label {
+        display: inline-block;
+        margin-left: -2em;
+        line-height: 1.5em;
+    }
+
+        input[type=radio ]:not(old) + label > span {
+            display: inline-block;
+            width: 0.875em;
+            height: 0.875em;
+            margin: 0.25em 0.5em 0.25em 0.25em;
+            border: 0.0625em solid rgb(192,192,192);
+            border-radius: 0.25em;
+            background: rgb(224,224,224);
+            background-image: -moz-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+            background-image: -ms-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+            background-image: -o-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+            background-image: -webkit-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+            background-image: linear-gradient(rgb(240,240,240),rgb(224,224,224));
+            vertical-align: bottom;
+        }
+
+    input[type=radio ]:not(old):checked + label > span {
+        background-image: -moz-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+        background-image: -ms-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+        background-image: -o-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+        background-image: -webkit-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+        background-image: linear-gradient(rgb(224,224,224),rgb(240,240,240));
+    }
+
+
+        input[type=radio]:not(old):checked + label > span > span {
+            display: block;
+            width: 0.5em;
+            height: 0.5em;
+            margin: 0.125em;
+            border: 0.0625em solid rgb(115,153,77);
+            border-radius: 0.125em;
+            background: rgb(153,204,102);
+            background-image: -moz-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+            background-image: -ms-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+            background-image: -o-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+            background-image: -webkit-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+            background-image: linear-gradient(rgb(179,217,140),rgb(153,204,102));
+        }
+/****end*/
+
+
+/*New question css*/
+.question-text {    
+    color: #ffffff;    
+    margin: 10px 0 0 0;
+    font: bold 20px Arial, Helvetica, sans-serif !Important;
+    /*color: #383838;*/
+    line-height: 40px !Important;
+}
+
+.wp-question-text {    
+    color: #555;    
+    margin: 20px 0 0 0;
+    font: bold 17px Arial, Helvetica, sans-serif !Important;
+    /*color: #383838;*/
+    line-height: 25px !Important;
+}
+
+
+.showMarker
+{
+    font-weight:bold;
+}
+
+.eraseSketch
+{
+    font-weight:bold;
+}

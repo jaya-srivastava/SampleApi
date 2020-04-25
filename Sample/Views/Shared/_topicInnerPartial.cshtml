@@ -1,0 +1,85 @@
+﻿@model IEnumerable<Sample.Models.DTO.TopicDto>
+@{
+    int i = 0;
+}
+<div class="tabbable tabs-left">
+    <ul class="nav nav-tabs vertical-tabs-ul margin-0">
+        @foreach (var topic in Model.Select(x => x.TopicDesc))
+        {
+            var topicDetail = Model.Where(x => x.TopicDesc == topic).FirstOrDefault();
+            if (topicDetail.SubTopic.Where(x => x.IsInactive == null || x.IsInactive == false).ToList().Count == 0)
+            {
+                i += 1;
+                continue;
+            }
+            else
+            {
+                if (i == 0)
+                {
+                    <li class="active vertical-tabs-li">
+                        <a href="#@topic.Replace(" ", String.Empty)" data-toggle="tab">
+                            @topic
+                        </a>
+                    </li>
+                }
+                else
+                {
+                    <li><a href="#@topic.Replace(" ", String.Empty)" data-toggle="tab">@topic</a></li>
+                }
+                i += 1;
+            }
+        }
+    </ul>
+    <div class="vertical-tabs-div tab-content margin-bottom-20">
+        @{ i = 0;}
+        @foreach (var topic in Model)
+        {
+            int count = 0;
+            var style = "";
+            <div id="@topic.TopicDesc.Replace(" ", String.Empty)" class="tab-pane @string.Format(i == 0 ? "active" : string.Empty)">
+                @{ i = i + 1;}
+                @foreach (var subTopic in topic.SubTopic)
+                {
+                    if (count % 2 == 0)
+                    {
+                        style = "label label-large label-success arrowed-right";
+                    }
+                    else
+                    {
+                        style = "label label-large label-pink arrowed-right";
+                    }               
+                    <div class="TwoRowsWorkSheet Line-Height3">
+                        <span>
+                            @if (subTopic.IsSEOUrlActive.HasValue && subTopic.IsSEOUrlActive.Value)
+                            {
+                                @Html.ActionLink(subTopic.SubTopicDesc.Trim(), topic.TopicDesc.Replace(" ", "-"), "math-problem", new { id = subTopic.SubTopicDescSEO }, new { @class = style })
+                            }
+                            else
+                            {
+                                @Html.ActionLink(subTopic.SubTopicDesc.Trim(), topic.TopicDesc.Replace(" ", "-"), "math-problem", new { id = subTopic.SubTopicId }, new { @class = style }) 
+                            }
+                        </span>
+                    </div>
+                            count = count + 1;
+                            if (topic.SubTopic.Count % 2 != 0 && topic.SubTopic.Count < 17)
+                            {
+                                if (count == topic.SubTopic.Count - 1)
+                                {
+                                    break;
+                                }
+                            }
+                            if (count > 17)
+                            {
+                                break;
+                            }
+                }
+                <br />
+
+                <div class="TwoRowsWorkSheet Line-Height3">
+                   @* @Html.ActionLink("All " + @topic.TopicDesc + " Skills", "Details", "Topic", new { id = topic.TopicDesc.Replace(" ", "-") }, new { @class = "seemore" })*@
+                    @Html.IconActionLink("All " + @topic.TopicDesc + " Skills", @Url.Action("Details", "Topic", new { id = topic.TopicDesc.Replace(" ", "-") }).ToString(), "seemore", "fa fa-chevron-circle-right color-orange margin-right-5")
+                </div>
+            </div>
+        }
+    </div>
+</div>

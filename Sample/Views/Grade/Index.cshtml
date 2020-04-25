@@ -1,0 +1,47 @@
+﻿@*@using Sample.Models.DTO
+    @model IEnumerable<GradeDto>*@
+@{
+    ViewBag.Title = "Math for different grades  | iPracticeMath";
+    ViewBag.MetaDescription = "Find for each grade math skills which are based on Common core. Try iPracticeMath for 100+ skills for each grade.";
+    ViewBag.Keywords = "Math Practice for Grades, Math Problems for Grades, math Worksheeets, 1st grade, 2nd Grade, 3rd Grade, 4th grade math, 5th grade math, 6th grade, 7th grade, 8th grade, 9th grade math";
+
+}
+
+<div class="row">
+    <div class="col-sm-8 col-md-8">
+        <ul class="breadcrumb">
+            <li>@Html.MicrodataActionLink("Home", @Url.Action("Index", "Home").ToString())</li>
+            <li>Grades</li>
+        </ul>
+    </div>
+</div>
+<div class="row">    
+    <div class="col-sm-8 col-md-8 headline">
+        <h1 class="heading-sm">Practice Math skills for your Grade</h1>
+    </div>
+    <div class="col-sm-4 col-md-4">
+        @Html.Partial("_addThisPartial")
+    </div>        
+</div>
+<div class="row">
+    <div class="col-sm-12 col-md-12">
+        iPracticeMath has an infinite number of lesson plans and worksheets that are categorized according to different grades and topics. From 1st Grade
+        to Grade 9, there is everything you need to know and learn about Math. Its carefully crafted questions and learning materials are meant to help
+        your students perform better and provide a platform for future mathematics learning.<br />
+        <br />
+    </div>    
+</div>
+<div class="row">
+    <div class="col-sm-12 col-md-12">
+        <a class="btn-u btn-u-lg rounded btn-u-blue margin-right-5 margin-top-6" href="#divGrade3">Go to grade 3<i class="margin-5 fa fa-arrow-circle-right"></i></a>
+        <a class="btn-u btn-u-lg rounded btn-u-sea margin-right-5 margin-top-6" href="#divGrade5">Go to grade 5<i class="margin-5 fa fa-arrow-circle-right"></i></a>
+        <a class="btn-u btn-u-lg rounded btn-u-yellow margin-right-5 margin-top-6" href="#divGrade7">Go to grade 7<i class="margin-5 fa fa-arrow-circle-right"></i></a>		<br />       
+    </div>
+</div>
+@Html.Partial("~/Views/Grade/_GradesIndexPartial3.cshtml")
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0024/9090.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>

@@ -1,0 +1,51 @@
+﻿@model Sample.Models.DTO.FeedbackDto
+@{
+    var model = new Sample.Models.DTO.FeedbackDto();
+    int gradeId = ViewBag.GradeId;
+    switch (gradeId)
+    {
+        case 1:
+            model.NotificationType = iPractice.Helpers.Enums.NotificationType.Grade_1.ToString();
+            break;
+        case 2:
+            model.NotificationType = iPractice.Helpers.Enums.NotificationType.Grade_2.ToString();
+            break;
+        case 3:
+            model.NotificationType = iPractice.Helpers.Enums.NotificationType.Grade_3.ToString();
+            break;
+        case 4:
+            model.NotificationType = iPractice.Helpers.Enums.NotificationType.Grade_4.ToString();
+            break;
+        case 5:
+            model.NotificationType = iPractice.Helpers.Enums.NotificationType.Grade_5.ToString();
+            break;
+        case 6:
+            model.NotificationType = iPractice.Helpers.Enums.NotificationType.Grade_6.ToString();
+            break;
+        case 7:
+            model.NotificationType = iPractice.Helpers.Enums.NotificationType.Grade_7.ToString();
+            break;
+        case 8:
+            model.NotificationType = iPractice.Helpers.Enums.NotificationType.Grade_8.ToString();
+            break;
+        case 9:
+            model.NotificationType = iPractice.Helpers.Enums.NotificationType.Grade_9.ToString();
+            break;
+        case 10:
+            model.NotificationType = iPractice.Helpers.Enums.NotificationType.Grade_10.ToString();
+            break;
+    }
+}
+
+<div>
+    Get notified when it’s ready!<br />
+    <br />
+    @using (Ajax.BeginForm("SubscribeMe", "Membership", FormMethod.Post, new AjaxOptions { OnBegin = "checkEmailNotification", OnSuccess = "successNotification" }))
+    {
+        @Html.TextBoxFor(m => m.Email, new { id = "txtEmail", @placeholder = "Email Address", @class = "form-control txtbox-width" })
+        @Html.ValidationMessageFor(m => m.Email)
+        @Html.HiddenFor(m=>m.NotificationType)
+        <input type="submit" value="Send" onclick="trackEventByAnalystics('Grade10Notification', 'Grade10Notification')" class="btn btn-success" id="btnsend" /><br />
+    }
+    <div id="divmsg"></div>
+</div>

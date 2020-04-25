@@ -1,0 +1,2819 @@
+﻿/*@charset "utf-8";
+ CSS Document */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+body {
+    font-size: 1.5em !important;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/*body {
+    line-height: 1;
+    font-size: 14px;
+}*/
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/**Basic**/
+html {
+    overflow-y: scroll;
+}
+
+/*html, body {
+    height: 100%;
+}*/
+
+/*#wrapper {
+    width: 100%;
+}*/
+
+.clear {
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    body p {
+        margin: 0;
+    }
+
+.mainBody {
+    /*min-height: 500px;*/
+}
+/**Main**/
+
+/**Header**/
+#header {
+    //background: url(http://image01.ipracticemath.com/content/images/hed_bg.jpg) repeat-x /* #353535*/;
+}
+
+
+
+.logo {
+    float: left;
+    width: 230px;
+    padding: 20px 0;
+}
+
+    .logo h1 {
+        line-height: normal;
+        margin: 0;
+        font-size: 100%;
+    }
+
+.inner_nav {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.main_links {
+    width: 525px;
+    float: left;
+    padding: 7px 0 0;
+}
+
+.setting {
+    margin-bottom: 0px;
+    margin-top: 13px;
+    margin: 0px 0px !important;
+}
+
+    .setting hover {
+        background-color: grey;
+    }
+
+    .setting li > a {
+        color: black !important;
+    }
+
+
+    .setting .caret {
+        border-bottom-color: #428BCA;
+        border-top-color: #428BCA;
+        border-bottom-color: -moz-use-text-color;
+        border-bottom-style: dotted;
+        border-bottom-width: 0;
+        border-top-color: #000000 !important;
+        border-top-style: solid;
+        border-top-width: 4px;
+        content: "";
+        display: inline-block;
+        height: 0;
+        margin-left: 2px;
+        vertical-align: middle;
+        width: 0;
+        margin-top: -1px !important;
+    }
+
+.grades {
+    float: right;
+    color: #fff;
+}
+
+    .grades span {
+        float: left;
+        display: block;
+        padding: 2px 0 0 0;
+    }
+
+        .grades span a {
+            color: #fff;
+        }
+
+.grade_link {
+    float: right;
+    margin: 0 0 0 4px;
+}
+
+    .grade_link li {
+        float: left;
+    }
+
+        .grade_link li a.active {
+            color: white;
+            background: green;
+            padding: 4px 4px;
+            display: block;
+            /*margin: 0 0 0 4px;*/
+            border-color: #3e8f3e;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -webkit-box-shadow: 2px 2px 2px 2px Grey;
+            background-image: -webkit-linear-gradient(top, #5cb85c 0%, #419641 100%);
+            background-image: -o-linear-gradient(top, #5cb85c 0%, #419641 100%);
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#5cb85c), to(#419641));
+            background-image: linear-gradient(to bottom, #5cb85c 0%, #419641 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff419641', GradientType=0);
+            filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+            background-repeat: repeat-x;
+            border-color: #3e8f3e;
+        }
+
+
+        .grade_link li a { /*font-family:Arial, Helvetica, sans-serif;;font-size:100%;color:#fff;*/
+            padding: 4px 5px;
+            display: block;
+            margin: 0 0 0 4px;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -webkit-box-shadow: 2px 2px 2px 2px Grey;
+            box-shadow: 2px 2px 2px 0px Grey;
+        }
+
+.prek {
+    background: #5bafe0;
+}
+
+    .prek span {
+        font-size: 14px;
+    }
+
+.two {
+    background: #db3f11;
+}
+
+.three {
+    background: #a4b515;
+}
+
+.four {
+    background: #537707;
+}
+
+.five {
+    background: #1573ca;
+}
+
+.six {
+    background: #414141;
+}
+
+.seven {
+    background: #83838c;
+}
+
+.eight {
+    background: #0e3d80;
+}
+
+.nine {
+    background: #e74473;
+}
+
+/**Main Nav**/
+
+.banner {
+    /*background: url(/content/images/Banner.png) no-repeat top center;*/
+    /*background: url(http://image01.ipracticemath.com/content/images/banner2_opt.png) no-repeat top center;*/
+    height: 445px;
+}
+
+.inner_banner {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.algebra, .multi, .word_prob, .division {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    float: left;
+    width: 100px;
+    margin: 184px 0 0 85px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+}
+
+.multi {
+    width: 135px;
+    margin: 70px 0 0 -74px;
+}
+
+sup {
+  top: -.1em !important;
+}
+
+/**Mid Wrapper**/
+.mid_wrapper {
+    width: 100%;
+}
+
+.inner_mid {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 30px 0 0;
+}
+
+.mid_head {
+    padding: 0 0 18px;
+    width: 100%;
+    background: #fff;
+}
+
+    .mid_head h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 188%;
+        color: #383838;
+        font-weight: bold;
+        line-height: 36px;
+    }
+
+.mid_head_h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 188%;
+    color: #1086cc;
+    font-weight: bold;
+    line-height: 36px;
+    padding: 0 0 0 15px;
+}
+
+.mid_head_h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+    color: chocolate;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 0 0 0 0;
+    margin-top: 0px !important;
+}
+
+.mid_head_h2_white {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 188%;
+    color: #fff;
+    margin: 0 0 15px 0;
+    font-weight: normal;
+    line-height: 22px;
+    padding: 0 0 0 15px;
+}
+
+.subhed {
+    color: #9ccb47;
+    font-size: 112.5%;
+}
+
+rights.gray_box {
+    background: #ededed;
+    border: 1px solid #dedede;
+    width: 328px;
+    float: left;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 10px 15px;
+    margin: 0 108px 12px 0;
+}
+
+.gray_box h3 {
+    font-size: 138%;
+    color: #252525;
+    margin: 0 0 15px;
+    font-weight: normal;
+}
+
+
+/**Footer**/
+.footer a:hover {
+    color: white !important;
+}
+
+.footer_Header {
+    display: block;
+    margin: 10px 0 5px 0;
+    border-bottom: 1px dotted #e4e9f0;
+}
+
+.footer .social a {
+    font-size: 30px !important;
+}
+/**Login**/
+.addlm {
+    padding-left: 10px;
+}
+
+.addtm {
+    margin: 25px 0 0 0;
+}
+
+/**Register**/
+
+
+.register_bg {
+    padding: 10px;
+    background: #fff;
+}
+
+.signup_line {
+    font: normal 16px Arial, Helvetica, sans-serif !Important;
+    /*color: #383838;*/
+    line-height: 40px !Important;
+}
+
+.register_input {
+    border: 1px solid #cacaca;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 8px 5px;
+    width: 320px;
+    color: #727272;
+}
+
+.msg {
+    font: normal 12px Arial, Helvetica, sans-serif;
+    color: #9f9f9f;
+    padding: 5px 0 0 10px;
+}
+
+.condition {
+    font: normal 13px Arial, Helvetica, sans-serif;
+    color: #383838;
+}
+
+.signup_btn {
+    font-size: 100%;
+    color: #fff;
+    background: #e7a91d;
+    padding: 5px 8px;
+    border: 1px solid #cf9522;
+}
+
+.faq-font14 {
+    font: bold 16px Arial, Helvetica, sans-serif;
+    color: #474747;
+    padding: 0 0 5px 0;
+}
+
+
+/**Contact Us**/
+.font14 {
+    font: bold 16px Arial, Helvetica, sans-serif;
+    color: #8ab90c;
+    padding: 0 0 5px 0;
+}
+
+.fontnor {
+    font: normal 14px Arial, Helvetica, sans-serif;
+    line-height: 20px;
+}
+
+.contact_map {
+    float: right;
+    margin: -190px 420px 0 0;
+    border: 2px solid #dedede;
+    padding: 3px;
+    width: 250px;
+    height: 250px;
+}
+
+/**About Us**/
+.descp_font14 {
+    font: normal 14px Arial, Helvetica, sans-serif;
+    line-height: 18px;
+    color: #474747;
+    margin-bottom: 20px;
+    margin-left: 16px;
+}
+
+.descp {
+    font: normal 17px Arial, Helvetica, sans-serif;
+    line-height: 18px;
+    color: #474747;
+    margin-bottom: 20px;
+    margin-left: 16px;
+}
+
+    .descp p {
+        padding-bottom: 10px;
+    }
+
+        .clearm, .descp p.clearm {
+            margin: 0;
+            padding: 0;
+        }
+
+.rowone {
+    padding: 0 0 5px;
+}
+
+.seemore {
+    margin: 15px 0 0 0;
+    font: normal 1em Arial, Helvetica, sans-serif;
+    margin: 0;
+    /*background: url(http://image01.ipracticemath.com/content/images/sprite_01.png) no-repeat scroll -142px -75px transparent;*/
+    margin: 10px 0 0;
+    padding: 2px 0 1px 25px;
+    display: block;
+    /*
+        color: #8B7D6B;
+        height: 15px;*/
+    text-decoration: none;
+    transition: color 500ms linear;
+    font-weight: bold;
+}
+
+    .seemore:hover {
+        color: #000;
+        text-decoration: none;
+    }
+
+/*.coming_soon {
+    padding: 20px 0 0 10px;
+}*/
+
+/**Grades**/
+.GradesDesec p, li, li a {
+    color: #555;
+}
+
+.left {
+    float: left;
+    width: 360px;
+}
+
+.right {
+    float: right;
+    width: 450px;
+}
+
+.clearrm {
+    margin-right: 0;
+}
+
+
+/**New**/
+.lft_countdown {
+    float: left;
+}
+
+.starone, .startwo {
+    background: url(http://image01.ipracticemath.com/content/images/sprite_01.png) no-repeat 0 -99px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 3px;
+}
+
+.startwo {
+    background: url(http://image01.ipracticemath.com/content/images/sprite_01.png) -84px -99px;
+}
+
+.rgt_countdown {
+    float: right;
+    width: 235px;
+}
+/**update 08 Oct 12*/
+.correct {
+    float: left;
+}
+
+.ans_score {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #b3b2b2;
+}
+/**update 08 Oct 12*/
+.wrong {
+    float: left;
+    margin-left: 25px;
+}
+
+.correct span {
+    color: #28a6f1;
+}
+
+.question_content {
+    margin: 20px 0 0 0;
+}
+
+.que_bg {
+    background: #51a351;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border: 1px solid #0591e5;
+    /*padding: 2px 15px;*/
+    color: #ffffff;
+}
+
+div.thoughtbot {
+    background-color: #5bb75b;
+    *background-color: #51a351;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+    background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+    background-image: -o-linear-gradient(top, #62c462, #51a351);
+    background-image: linear-gradient(to bottom, #62c462, #51a351);
+    background-image: -moz-linear-gradient(top, #62c462, #51a351);
+    background-repeat: repeat-x;
+    border-color: #51a351 #51a351 #387038;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff51a351', GradientType=0);
+    filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+    padding: 3px 5px 6px 6px ;
+    text-indent: 5px;
+    width: auto;
+}
+
+.que_bg h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #fff;
+}
+
+    .que_bg h3 span {
+        color: #a1d9fa;
+    }
+
+.que_ans {
+    max-width: 490px;    
+}
+
+.que_option_margin {
+    margin-left: 20px;
+    width: 300px;
+}
+
+.que_ans label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #5c5c5c;
+}
+
+.que_ans input {
+    float: left;
+    margin: 12px 25px 0 25px !important;
+}
+
+.que_option p {
+    padding: 5px 0;
+    border-bottom: 1px solid #dcdcdc;
+    margin: 5px 0 0 0;
+}
+
+.que_option_Last p {
+    padding: 5px 0;
+    /*border-bottom: 1px solid #dcdcdc;*/
+    margin: 5px 0 0 0;
+}
+
+.que_option .empty-option {
+    margin: 11px;
+}
+
+.signup_line1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+.addlrm {
+    padding: 20px 20px 0 20px;
+    max-width: 940px;
+}
+
+.main_bg {
+    background: #fff;
+}
+
+.option {
+    margin: 40px 0 0 44px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #252525;
+}
+
+.back_link_new {
+    background: url(http://image01.ipracticemath.com/content/images/sprite_01.png) no-repeat scroll -142px -75px transparent;
+    color: #0099FF;
+    display: block;
+    font: 12px/18px Arial,Helvetica,sans-serif;
+    padding: 0 0 0 25px;
+    float: left;
+    margin: 10px 0 10px 35px;
+}
+
+
+
+.btns {
+    padding: 0 0 30px 0px;
+}
+
+.topics h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #5c5c5c;
+}
+
+.btns span a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.accordion {
+    margin: 15px 0 0 0;
+}
+
+question_content .expand p {
+    padding-bottom: 20px;
+}
+
+.question_content .expand strong {
+    font-weight: bold;
+}
+
+.question_content .expand span {
+    font-size: 14px !important;
+}
+
+.add_sub a {
+    color: #252525;
+    font-weight: normal;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.question_content .expand a:hover {
+    text-decoration: none;
+}
+
+.question_content .collapse:hover {
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+.question_content .active {
+    /*background: url(http://image01.ipracticemath.com/images/up.png) no-repeat 99% 50% #bee4fb;*/
+    border-bottom: 0;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+}
+
+.add_sub {
+    width: 300px;
+    float: left;
+}
+
+    .add_sub a {
+        /*background: url(http://image01.ipracticemath.com/images/bullet.png) no-repeat 0 50%;*/
+        padding: 0 0 0 15px;
+    }
+
+
+
+.rights {
+    color: #424242;
+    font: normal 75% Arial, Helvetica, sans-serif;
+    float: right;
+    padding: 30px 0 0 0;
+    width: 27%;
+}
+
+.rights_txt {
+    width: 230px;
+    float: right;
+    text-align: right;
+    padding-top: 10px;
+}
+
+.social_icons_bx {
+    position: absolute;
+    top: 77px;
+    right: 13%;
+}
+
+.facebook, .twitter_icon, .gplus {
+    background: url(http://image01.ipracticemath.com/content/images/sprite_01.png) no-repeat 0 -68px;
+    display: block;
+    float: left;
+    width: 45px;
+    height: 60px;
+}
+
+.twitter_icon {
+    background: url(http://image01.ipracticemath.com/content/images/sprite_01.png) no-repeat -45px -68px;
+}
+
+.gplus {
+    background: url(http://image01.ipracticemath.com/content/images/sprite_01.png) no-repeat -92px -68px;
+}
+
+.clock_icon {
+    background: url(http://image01.ipracticemath.com/content/images/sprite_01.png) no-repeat 0 -182px;
+    float: left;
+    width: 70px;
+    height: 90px;
+}
+/**update 08 Oct 12*/
+.time_bx {
+    float: left;
+    padding: 10px 0 0 0;
+}
+
+.stars {
+    padding: 30px 0 0 0;
+}
+
+.clock {
+    width: 160px;
+    color: #5c5c5c;
+}
+    /*#Date { font-family:Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif; font-size:36px; text-align:center;  }*/
+    .clock ul {
+        width: 160px;
+        margin: 0 auto;
+        padding: 0px;
+        list-style: none;
+        text-align: center;
+    }
+
+        .clock ul li {
+            display: inline;
+            font-size: 40px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+/**update 08 Oct 12*/
+#point {
+    position: relative;
+    -moz-animation: mymove 1s ease infinite;
+    -webkit-animation: mymove 1s ease infinite;
+}
+
+
+
+.awesome_box {
+    width: 564px;
+}
+
+.awe_bx {
+    border: 5px solid #349dda;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    width: 425px;
+    padding: 28px;
+    float: right;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    color: #333333;
+    margin: 28px 0 0 0;
+    background: #fff;
+}
+
+.awe_star {
+    background: url(http://image01.ipracticemath.com/content/images/sprite_01.png) no-repeat 0 -272px;
+    height: 172px;
+    position: absolute;
+    width: 120px;
+}
+
+
+
+.addbm {
+    padding: 5px 0 20px 0;
+}
+
+/**Accordion**/
+.collapse_div {
+    padding-bottom: 40px;
+}
+
+.collapseone a {
+    font: normal 138% Arial, Helvetica, sans-serif;
+    color: #0099FF;
+    text-decoration: none;
+}
+
+.collapseone {
+    cursor: pointer;
+    /*background: url(http://image01.ipracticemath.com/images/down.png) no-repeat 96% 50% #bee4fb;*/
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+}
+
+.expandone, .collapseone {
+    padding: 18px;
+    border: 0;
+}
+
+.expandone {
+    border-top: 1px solid #92c7e8;
+    font-size: 14px; /*border-top:1px solid white;*/
+    position: relative;
+    top: -5px;
+    border-bottom: 0;
+    color: #1f1f1f;
+    line-height: 20px;
+    background: #bee4fb;
+    border-radius: 0 0 7px 7px;
+    -webkit-border-radius: 0 0 7px 7px;
+    margin-top: -8px;
+    padding-top: 5px;
+}
+
+    .expandone p {
+        padding-bottom: 20px;
+    }
+
+    .expandone strong {
+        font-weight: bold;
+    }
+
+    .expandone span {
+        font-size: 14px;
+    }
+
+    .expandone a {
+        color: #0099FF;
+        font-weight: normal;
+        font-size: 11px;
+        text-decoration: none;
+        margin-left: 5px;
+    }
+
+        .expandone a:hover {
+            text-decoration: underline;
+        }
+
+    .expandone li {
+        /*background: url(http://image01.ipracticemath.com/images/sprite.png) no-repeat 0 -154px;*/
+        padding: 0 0 0 18px;
+        font-size: 14px;
+        line-height: 25px;
+        color: #474747;
+    }
+
+.collapseone:hover {
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+.activeone {
+    /*background: url(http://image01.ipracticemath.com/images/up.png) no-repeat 96% 50% #bee4fb;*/
+    border-bottom: 0;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+}
+
+.add_sub {
+    width: 300px;
+    float: left;
+}
+
+    .add_sub a {
+        /*background: url(http://image01.ipracticemath.com/images/bullet.png) no-repeat 0 50%;*/
+        padding: 0 0 0 15px;
+    }
+
+.collapse_lft, .collaspe_rgt {
+    width: 400px;
+    float: left;
+}
+
+.collapse_lft {
+    margin-right: 60px;
+}
+
+.clearbp {
+    padding-bottom: 0;
+}
+
+.main_content {
+    padding-bottom: 20px;
+    background: #fff;
+    padding-left: 12px;
+}
+
+
+.number_descp {
+    padding: 10px 0 0 0;
+}
+
+    .number_descp h4, .number_descp h3 {
+        font: bold 15px Arial, Helvetica, sans-serif;
+        color: #8ab90c;
+        margin: 0 0 5px 0;
+    }
+
+    .number_descp h3 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+.list li {
+    list-style-type: disc;
+}
+
+.list {
+    margin-left: 16px;
+}
+
+.row2 {
+    padding: 20px 0 0 0;
+}
+
+.c_green {
+    color: #00b050;
+}
+
+.c_red {
+    color: #ff0000;
+}
+
+.c_purple {
+    color: #7030a0;
+}
+
+.list a {
+    text-decoration: underline;
+    color: #333333;
+}
+
+    .list a:hover {
+        text-decoration: none;
+        color: #28A6F1;
+    }
+
+.heading {
+    font-size: 24px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.clock {
+    width: 160px;
+    color: #5c5c5c;
+}
+
+    .clock ul {
+        width: 160px;
+        margin: 0 auto;
+        padding: 0px;
+        list-style: none;
+        text-align: center;
+    }
+
+        .clock ul li {
+            display: inline;
+            font-size: 40px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+/**update 08 Oct 12*/
+#point {
+    position: relative;
+    -moz-animation: mymove 1s ease infinite;
+    -webkit-animation: mymove 1s ease infinite;
+}
+
+.score {
+    width: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #28a6f1;
+    border: 0;
+}
+
+.gray_box {
+    background: #28A6F1;
+    border: 1px solid #dedede;
+    border-radius: 10px 10px 13px 13px;
+    -webkit-border-radius: 10px 10px 13px 13px;
+    padding: 10px 0 0 0;
+    margin: 0 0 12px 0;
+}
+
+    .gray_box h1 {
+        font-size: 24px;
+        color: #fff;
+        margin: 0 0 15px;
+        font-weight: normal;
+        line-height: 22px;
+        padding: 0 0 0 15px;
+    }
+
+    .gray_box li, #accordion li {
+        padding: 0 0 0 0px;
+        font-size: 12px;
+        line-height: 25px;
+        color: #474747;
+    }
+
+        .gray_box li a, #accordion li a {
+            color: #0099ff;
+        }
+
+            .gray_box li a:hover, #accordion li a:hover {
+                text-decoration: underline;
+            }
+
+        .gray_box li.bgposition {
+            background-position: 0 -147px;
+        }
+
+.row1 label {
+    display: inline;
+}
+
+.carrott {
+    float: right;
+    top: 9px;
+    position: relative;
+    right: 10px;
+    border-top-color: white;
+    border-bottom-color: white;
+    border-top: 10px solid white;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    display: inline-block;
+}
+
+.display-field {
+    background: #fff;
+    padding: 0 0 0 25px;
+    margin: 0;
+    border-radius: 0px 0px 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+}
+
+.gray_box .seemore {
+    margin: 10px;
+}
+
+.gray_box ul {
+    margin: 0;
+    list-style-type: disc;
+    color: #474747;
+}
+
+.gray_boxtop {
+    padding: 0;
+}
+
+    .gray_boxtop .display-field {
+        border-radius: 7px 7px 10px 10px;
+        -webkit-border-radius: 7px 7px 10px 10px;
+    }
+
+.bulletsBg {
+    padding: 0 0 0 15px;
+}
+
+.row-fluid fieldset {
+    margin: 0 0 0 15px;
+}
+
+.row-fluid legend {
+    margin: 0;
+}
+
+.row-fluid .addtm {
+    margin: 25px 0 0 0;
+}
+
+.backrr {
+    margin-left: 0px;
+}
+
+.rowrr input {
+    margin-bottom: 0px !important;
+}
+
+.displayrr {
+    padding-left: 0px;
+}
+
+.addtmne {
+    margin-top: 18px !important;
+}
+
+.rowlab label {
+    display: block;
+}
+
+.rowlab {
+    padding-bottom: 0px;
+}
+
+
+/**/
+
+.border_solid_top {
+    border-top: 1px solid #000;
+}
+
+.width_10px {
+    width: 10px;
+}
+
+.boder_top_text_center {
+    border-top: solid #000 1px;
+    text-align: center;
+}
+
+.padding_left_20 {
+    padding: 0px;
+    margin: 0px;
+    padding-left: 20px;
+}
+
+.padding_right_20 {
+    padding: 0px;
+    margin: 0px;
+    padding-right: 20px;
+}
+
+.margin_top_15 {
+    margin-top: 15px;
+}
+
+.margin_left_30 {
+    margin-left: 30px;
+}
+
+.margin_left_30 {
+    margin-left: 30px;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #ff0000;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/* Report Styles*/
+
+.reportHeader {
+    background-color: #138DD4 !important;
+    color: white !important;
+    font-weight: bold !important;
+    height: 25px !important;
+    font-size: 15px !important;
+}
+
+
+/*------------------------------------ List style ----------------------------*/
+
+.tag p a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+}
+
+    .tag p a:hover {
+        text-decoration: none;
+    }
+
+.tag p {
+    line-height: 0.9;
+    margin: 0 0 7px 20px;
+    position: relative;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 0.75em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #996633;
+    text-shadow: 0px 1px 0px #CDB79E;
+    padding: 0.417em 0.417em 0.417em 0.917em;
+    border-top: 1px solid #CDB79E;
+    border-right: 1px solid #CDB79E;
+    border-bottom: 1px solid #CDB79E;
+    -webkit-border-radius: 0 0.25em 0.25em 0;
+    -moz-border-radius: 0 0.25em 0.25em 0;
+    border-radius: 0 0.25em 0.25em 0;
+    background-image: -webkit-linear-gradient(top, #FFE4C4, #EED5B7);
+    background-image: -moz-linear-gradient(top, #FFE4C4, #EED5B7);
+    background-image: -o-linear-gradient(top, #FFE4C4, #EED5B7);
+    background-image: -ms-linear-gradient(top, #FFE4C4, #EED5B7);
+    background-image: linear-gradient(top, #FFE4C4, #EED5B7);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#FFE4C4', EndColorStr='#EED5B7');
+    /*-webkit-box-shadow:
+		inset 0 1px 0 #CDB79E,
+		0 1px 1px rgba(0,0,0,.1);
+	-moz-box-shadow:
+		inset 0 1px 0 #CDB79E,
+		0 1px 1px rgba(0,0,0,.1);
+	box-shadow:
+		inset 0 1px 0 #CDB79E,
+		0 1px 1px rgba(0,0,0,.1);*/
+}
+
+    .tag p:before {
+        line-height: 1;
+        content: '';
+        width: 1.30em;
+        height: 1.358em;
+        background-image: -webkit-linear-gradient(left top, #FFE4C4, #EED5B7);
+        background-image: -moz-linear-gradient(left top, #FFE4C4, #EED5B7);
+        background-image: -o-linear-gradient(left top, #FFE4C4, #EED5B7);
+        background-image: -ms-linear-gradient(left top, #FFE4C4, #EED5B7);
+        background-image: linear-gradient(left top, #FFE4C4, #EED5B7);
+        filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#FFE4C4', EndColorStr='#EED5B7');
+        position: absolute;
+        left: -0.69em;
+        top: .2em;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        border-left: 1px solid #CDB79E;
+        border-bottom: 1px solid #CDB79E;
+        -webkit-border-radius: 0 0 0 0.25em;
+        -moz-border-radius: 0 0 0 0.25em;
+        border-radius: 0 0 0 0.25em;
+        z-index: 1;
+    }
+
+    .tag p:after {
+        content: '';
+        width: 0.5em;
+        height: 0.5em;
+        background: #fff;
+        -webkit-border-radius: 4.167em;
+        -moz-border-radius: 4.167em;
+        border-radius: 4.167em;
+        border: 1px solid #CDB79E;
+        -webkit-box-shadow: 0 1px 0 #CDB79E;
+        -moz-box-shadow: 0 1px 0 #CDB79E;
+        box-shadow: 0 1px 0 #CDB79E;
+        position: absolute;
+        top: 0.667em;
+        left: -0.083em;
+        z-index: 9999;
+    }
+
+    .tag p:hover {
+        background-image: -webkit-linear-gradient(top, #FFE4C2, #FFE4C4);
+        background-image: -moz-linear-gradient(top, #FFE4C2, #FFE4C4);
+        background-image: -o-linear-gradient(top, #FFE4C2, #FFE4C4);
+        background-image: -ms-linear-gradient(top, #FFE4C2, #FFE4C4);
+        background-image: linear-gradient(top, #FFE4C2, #FFE4C4);
+        filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#FFE4C2', EndColorStr='#FFE4C4');
+        border-color: #e1b160;
+    }
+
+        .tag p:hover:before {
+            background-image: -webkit-linear-gradient(left top, #FFE4C2, #FFE4C4);
+            background-image: -moz-linear-gradient(left top, #FFE4C2, #FFE4C4);
+            background-image: -o-linear-gradient(left top, #FFE4C2, #FFE4C4);
+            background-image: -ms-linear-gradient(left top, #FFE4C2, #FFE4C4);
+            background-image: linear-gradient(left top, #FFE4C2, #FFE4C4);
+            filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#FFE4C2', EndColorStr='#FFE4C4');
+            border-color: #e1b160;
+        }
+
+/*.navlist {
+    list-style-image: url(http://image01.ipracticemath.com/images/bullets.jpg);
+}*/
+
+.navlist li a {
+    text-decoration: none;
+    color: #000;
+    transition: color 500ms linear;
+}
+
+    .navlist li a:hover {
+        text-decoration: none;
+        color: lightskyblue;
+    }
+
+/*drop down menu style changes*/
+.dropdown {
+    background-color: none !important;
+    background-image: none !important;
+}
+
+    .dropdown:hover {
+        color: #000 !important;
+    }
+
+.dropdown-toggle {
+    background-color: none !important;
+    background-image: none !important;
+}
+
+    .dropdown-toggle:hover {
+        color: #000 !important;
+    }
+
+
+a.text-success:hover,
+a.text-success:focus {
+    color: #356635;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1.mainlogo {
+    line-height: 12px;
+    margin: 0 0 0 0;
+}
+/****Main Logo Css added by Jaya****/
+.mainlogo-color {
+    background-color: white !important;
+    border-radius: 16px 16px 16px 16px;
+}
+
+.padding-4 {
+    padding: 4px;
+}
+
+.margin-right20 {
+    margin-right: 100px;
+}
+
+.text-shadow-grey {
+    text-shadow: 4px 3px 0 #808080, 9px 8px 0 rgba(0, 0, 0, 0.15) !important;
+}
+
+.text-shadow-green {
+    text-shadow: 4px 3px 0 #3e8f3e, 9px 8px 0 rgba(0, 0, 0, 0.15) !important;
+}
+
+.text-shadow-orange {
+    text-shadow: 4px 3px 0 #e67e22, 9px 8px 0 rgba(0, 0, 0, 0.15) !important;
+}
+
+.text-shadow-sea {
+    text-shadow: 4px 3px 0 #1fa67a, 9px 8px 0 rgba(0, 0, 0, 0.15) !important;
+}
+
+.text-shadow-blue {
+    text-shadow: 4px 3px 0 #3498db , 9px 8px 0 rgba(0, 0, 0, 0.15) !important;
+}
+
+.text-shadow-purple {
+    text-shadow: 4px 3px 0 #9b6bcc , 9px 8px 0 rgba(0, 0, 0, 0.15) !important;
+}
+
+.text-shadow-brown {
+    text-shadow: 4px 3px 0 #9c8061, 9px 8px 0 rgba(0, 0, 0, 0.15) !important;
+}
+
+.home-backcolor-grey {
+    /*background-color:#428BCA !important;  */
+    background-color: #808080 !important;
+}
+
+.home-backcolor-blue {
+    background-color: #3498db  !important;
+}
+
+.home-backcolor-sea {
+    background-color: #1fa67a !important;
+}
+
+.home-backcolor-brown {
+    background-color: #9c8061 !important;
+}
+
+.home-backcolor-orange {
+    background-color: #e67e22 !important;
+}
+
+
+
+.home-backcolor-purple {
+    background-color: #9b6bcc !important;
+}
+
+.home-backcolor-green {
+    background-color: #3e8f3e !important;
+}
+
+.anc-color {
+    color: #72c02c !important;
+}
+
+    .anc-color:hover, .anc-color:focus {
+        color: #51a351 !important;
+    }
+
+.height-200 {
+    height: 230px;
+}
+
+
+.jumbotron h2,
+.jumbotron .h2 {
+    color: inherit;
+}
+
+.jumbotron h3,
+.jumbotron .h3 {
+    color: inherit;
+}
+
+
+.btn-w {
+    font-family: "Open Sans",sans-serif;
+    color: #b0ddce;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.btn-white-blue {
+    color: #3498db  !important;
+}
+
+.btn-white-brown {
+    color: #9c8061 !important;
+}
+
+.btn-white-green {
+    color: #3e8f3e !important;
+}
+
+.btn-white-sea {
+    color: #1fa67a !important;
+}
+
+.btn-white-orange {
+    color: #e67e22 !important;
+}
+
+.btn-white-purple {
+    color: #9b6bcc !important;
+}
+
+
+
+.btn-white a:focus, .btn-white:hover {
+    color: #aaa !important;
+    text-decoration: none;
+}
+
+.btn-white-blue:focus, .btn-white-blue:hover {
+    color: #428BCA !important;
+    text-decoration: none;
+}
+
+.btn-white-brown:focus, .btn-white-brown:hover {
+    color: #9c8061 !important;
+    text-decoration: none;
+}
+
+.btn-white-green:focus, .btn-white-green:hover {
+    color: #51a351 !important;
+    text-decoration: none;
+}
+
+.btn-white-orange:focus, .btn-white-orange:hover {
+    color: #33dda6 !important;
+    text-decoration: none;
+}
+
+.btn-white-purple:focus, .btn-white-purple:hover {
+    color: #9b6bcc !important;
+    text-decoration: none;
+}
+
+
+.btn-w:focus,
+.btn-w:active:focus,
+.btn-w.active:focus {
+    color: #fff;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.btn-w:hover,
+.btn-w:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-w:active,
+.btn-w.active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.btn-white {
+    background-color: white !important;
+    color: #808080;
+    font-weight: bolder;
+    display: inline-block;
+    padding: 10px 32px;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+    .btn-white:focus,
+    .btn-white:active:focus,
+    .btn-white.active:focus {
+        outline: thin dotted;
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px;
+    }
+
+    .btn-white:active,
+    .btn-white.active {
+        background-image: none;
+        outline: 0;
+        -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    }
+
+
+.btn-signup {
+    background-color: white !important;
+    color: #e67e22;
+    font-weight: bolder;
+    display: inline-block;
+    padding: 4px 17px;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+    .btn-signup:focus,
+    .btn-signup:active:focus,
+    .btn-signup.active:focus {
+        outline: thin dotted;
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px;
+    }
+
+    .btn-signup:hover,
+    .btn-signup:focus {
+        color: #333;
+        text-decoration: none;
+    }
+
+    .btn-signup:active,
+    .btn-signup.active {
+        background-image: none;
+        outline: 0;
+        -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    }
+
+
+
+.padding-10 {
+    padding: 10px;
+}
+/*********************************/
+
+
+
+/*Reports CSS*/
+.reports-img {
+    border: 1px solid;
+    border-radius: 19px 19px 19px 19px;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+.reports a {
+    font-weight: bold;
+}
+
+    .reports a:hover {
+        text-decoration: none;
+    }
+
+.reportHTag {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.welcomeUser {
+    font-weight: bold;
+    margin-top: 6px;
+    text-decoration: underline;
+}
+
+.reportHead, .reportLine {
+    clear: both;
+}
+
+    .reportHead .small, .reportLine .small {
+        max-width: 75px !important;
+        min-width: 75px !important;
+    }
+
+    .reportHead span {
+        /*background: url(http://image01.ipracticemath.com/content/images/nav_bg.jpg) repeat-x #0072b6;*/
+        color: white !important;
+        font-size: 15px !important;
+        font-weight: bold !important;
+        height: 25px !important;
+        float: left;
+        min-width: 190px;
+        text-align: center;
+        padding-top: 6px;
+        border-radius: 20px;
+    }
+
+    .reportLine span {
+        font-size: 15px !important;
+        font-weight: bold !important;
+        height: 25px !important;
+        float: left;
+        min-width: 190px;
+        text-align: center;
+    }
+
+.top_nav_bg nav a {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #1d3b55;
+    line-height: 51px;
+    margin-right: 42px;
+}
+
+
+.top_right_pannel {
+    float: right;
+    padding-top: 10px;
+}
+
+    .top_right_pannel input[type="text"] {
+        float: left;
+        background: #fff;
+        border: none;
+        width: 125px;
+        border-radius: 15px;
+        box-shadow: 1px 1px 1px #2c3061 inset;
+        padding: 5px 21px 5px 5px;
+        color: #565656;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .top_right_pannel span {
+        float: left;
+        margin-top: 7px;
+        margin-left: -20px;
+    }
+
+
+
+
+/*********** 
+        Setting Box
+     ***********/
+ul.top_r_nav {
+    float: left;
+}
+
+    ul.top_r_nav li {
+        float: left;
+        position: relative;
+        margin-right: 7px;
+    }
+
+        ul.top_r_nav li.setting_icon a {
+            margin-top: 2px;
+            float: left;
+            line-height: 20px;
+        }
+
+        ul.top_r_nav li.setting_icon span {
+            float: left;
+            margin: 0 0px 0px 5px;
+            line-height: 24px;
+            font-weight: bold;
+            color: #067BC0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            /*text-shadow: 1px 1px 1px #1d3b55;*/
+        }
+
+
+.setting_list {
+    float: left;
+    position: absolute;
+    top: 27px;
+    right: -42px;
+    min-width: 160px;
+}
+
+    .setting_list .spanUL {
+        float: right !important;
+        width: 41px;
+        height: 10px;
+        position: relative;
+        z-index: 9999;
+        margin-right: 73px;
+        margin-bottom: -3px;
+    }
+
+
+    .setting_list span {
+        float: right !important;
+        width: 41px;
+        height: 10px;
+        position: relative;
+        z-index: 9999;
+    }
+
+    .setting_list ul {
+        float: left;
+        clear: both;
+        width: 145px;
+        box-shadow: 1px 1px 1px #212121;
+        border-radius: 5px;
+        padding: 5px 0;
+        position: relative;
+        z-index: 9999;
+        background: white;
+    }
+
+        .setting_list ul li a:hover {
+            background-color: #0081C2;
+            background-image: linear-gradient(to bottom, #0088CC, #0077B3);
+            background-repeat: repeat-x;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        .setting_list ul li a {
+            clear: both;
+            color: #333333;
+            display: block;
+            font-weight: normal;
+            line-height: 20px;
+            padding: 3px 20px;
+            white-space: nowrap;
+            min-width: 105px;
+        }
+
+
+
+
+.TopicDeails {
+    margin: 25px 0 0 35px;
+    width: 75%;
+}
+
+.subTpoicSheet {
+    width: 40%;
+    float: left;
+    margin: 0 0 0 35px;
+}
+
+
+
+.Line-Height3 {
+    line-height: 30px;
+}
+
+    .Line-Height3 a a:hover {
+        color: black;
+    }
+
+    .Line-Height3 span a:hover {
+        color: black;
+    }
+
+
+.FAQLinks {
+    padding-left: 15px;
+}
+
+    .FAQLinks a:hover {
+        color: #8AB90C;
+    }
+
+.scrollup {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: none;
+    text-indent: -9999px;
+    background: url(http://image01.ipracticemath.com/content/images/icon_top.png) no-repeat;
+}
+
+.learn-Practice-Math {
+    background: none repeat scroll 0 0 #4C9DC6;
+    border-radius: 14px;
+    color: #FFFFFF;
+    margin: 3px 3px 3px 3px;
+    padding: 6px 6px;
+    text-decoration: none;
+}
+
+    .learn-Practice-Math:hover {
+        text-decoration: none;
+        color: #FFFFFF;
+        background-color: #3C8DB6;
+    }
+
+
+/*CSS Reports*/
+
+.imgAwards {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-u {
+    background: none repeat scroll 0 0 #5fb611;
+    border: 0 none;
+    color: #FFFFFF !important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    padding: 7px 13px !important;
+    position: relative;
+    text-decoration: none !important;
+}
+
+.form-control {
+    border-radius: 0px !important;
+}
+
+/*Main Menu and Home Page Styles*/
+
+.main_content .accordion-heading .accordion-toggle {
+    background-color: #aaa;
+    padding: 4px 15px;
+}
+
+.main_content .accordion-inner {
+    background-color: #ddd;
+    padding: 15px;
+}
+
+    .main_content .accordion-inner ul {
+        background-color: #fff;
+        margin: 0;
+        padding: 10px;
+    }
+
+.main_content .accordion-group {
+    border: 1px solid #aaa;
+    margin-bottom: 15px;
+}
+
+    .main_content .accordion-group h5 {
+        margin: -10px 0 6px;
+    }
+
+.margin_15 {
+    margin-left: 15px;
+}
+
+.menu_main {
+    width: 1000px;
+    height: 200px;
+    position: relative;
+}
+
+/*Three Box On Home Page*/
+.service {
+    margin-bottom: 10px;
+    padding: 0px 10px 10px 10px;
+    border-radius: 2px 2px 2px 2px;
+    background: none repeat scroll 0 0 #F9F9F9;
+    box-shadow: 0 0 4px #C0C0C0;
+}
+
+    .service p {
+        font-size: 10px;
+        line-height: 1.6;
+        font-size: 13px;
+    }
+
+    .service h2 {
+        text-align: center;
+        color: #8AB90C;
+    }
+
+    .service h3 {
+        text-align: center;
+        color: #8AB90C;
+        font-size: 24px;
+    }
+
+    .service:hover {
+        background: none repeat scroll 0 0 #F4F4F4;
+        transition: box-shadow 0.2s ease-in-out 0s;
+    }
+
+.HomeInfoBar {
+    padding: 20px 0 20px 0;
+}
+
+    .HomeInfoBar span {
+        color: #8B0000;
+        display: block;
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .HomeInfoBar a {
+        color: rgb(139, 0, 0);
+        text-decoration: underline;
+    }
+
+    .HomeInfoBar p {
+        color: #e67e22;
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+.learnmore {
+    width: 180px;
+    float: right;
+    margin: 390px 30px 0 0;
+    text-align: right;
+}
+
+
+/*GRADE NOTIFICATION BAR*/
+
+.gradesNotification {
+    padding: 20px 0 20px 10px;
+    font-size: 16px;
+}
+
+    /*.gradesNotification a {
+        color: rgb(139, 0, 0);
+        text-decoration: underline;
+    }*/
+
+    .gradesNotification h1 {
+        color: #B11111;
+        font-size: 25px;
+        margin-top: 0px;
+        line-height: 0px;
+    }
+
+.gradesNotif {
+    line-height: 20px;
+    margin: 10px 10px 10px 0px;
+    font-style: italic;
+    color: #000000;
+    /*font-weight: bold;*/
+    font-size: 14px;
+}
+
+
+/*LEARNING TOPIC NOTIFICATION BAR*/
+.LearningNotification {
+    padding: 20px;
+}
+
+
+/*COMMON STYLE SPECIAL PORTIONS*/
+
+.InformationBox {
+    box-shadow: inset 0 0 4px #eee;
+    background: url(http://image01.ipracticemath.com/content/images/breadcrumbs.png) repeat;
+    border-left: 4px solid #94c564;
+}
+
+
+/* UPDATE PROFILE  */
+
+.panel-group .panel {
+    border-radius: 4px;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.panel-default {
+    border-color: #ddd;
+}
+
+.panel {
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.acc-v1 .panel-heading a {
+    background: none repeat scroll 0 0 #ececec;
+    display: block;
+    font-size: 14px;
+    padding: 0px 15px;
+}
+
+.update-profile {
+    margin: 20px 20px 20px 10px;
+}
+
+    .update-profile input[type="text"], .update-profile input[type="password"] {
+        height: 25px;
+        width: 85%;
+        font-size: 16px;
+    }
+
+    .update-profile h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 150%;
+        font-weight: bold;
+        line-height: 36px;
+        color: #2884ca;
+        margin-bottom: 35px;
+        text-align: center;
+    }
+
+    .update-profile h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 100%;
+        font-weight: bold;
+        line-height: 36px;
+        text-align: left;
+        margin: 0 !important;
+    }
+
+    .update-profile select {
+        height: 35px;
+        width: 85%;
+        font-size: 16px;
+    }
+
+    .update-profile .input-div {
+        padding: 10px;
+        margin: 15px;
+    }
+
+/*  SIGN IN & REGISTRATION FORM*/
+
+.sign-in {
+    margin: 20px 20px 20px 10px;
+}
+
+    .sign-in input[type="text"], .sign-in input[type="password"] {
+        height: 30px;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .sign-in h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 150%;
+        font-weight: bold;
+        line-height: 36px;
+        border-bottom-color: #EEEEEE;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        color: #555555;
+        margin-bottom: 35px;
+        text-align: center;
+    }
+
+.Sign-in-up-head {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: normal;
+    margin-top: 5px;
+    text-shadow: none;
+    font-size: 16px;
+}
+
+.sign-up {
+    margin: 20px 40px 20px 20px;
+}
+
+    .sign-up input[type="text"], .sign-up input[type="password"] {
+        height: 20px;
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .sign-up h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 130%;
+        font-weight: bold;
+        line-height: 36px;
+        border-bottom-color: #EEEEEE;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        color: #2884ca;
+        margin-bottom: 35px;
+        text-align: center;
+    }
+
+
+
+/****** GROUPING TABS  *******/
+.group-tabs .nav-tabs {
+    border-bottom: none;
+}
+
+    .group-tabs .nav-tabs li a {
+        padding: 9px 16px;
+        background: none;
+        border: none;
+    }
+
+    .group-tabs .nav-tabs li.active a {
+        background: #fff;
+        padding: 7px 15px 9px;
+        border: solid 1px #CBCBCB;
+        border-top: solid 2px #e67e22;
+        border-bottom: none !important;
+        background-color: #F9F9F9;
+    }
+
+.group-tabs .tab-content {
+    padding: 25px 16px;
+    border: solid 1px #CBCBCB;
+    background-color: #F9F9F9;
+}
+
+.tab-content {
+    overflow: auto;
+}
+
+.group-tabs .groupTabs-ul {
+    margin-bottom: 0px;
+}
+
+/********* REGISTRATION AND SUCCESS ***********/
+
+.register-success h3 {
+    color: green;
+    font-style: italic;
+}
+
+
+.studentPasswordSuccess {
+    font-size: 20px !important;
+}
+
+    .studentPasswordSuccess span {
+        color: green;
+        font-weight: bold;
+    }
+
+/*slidder css for home page*/
+.announcement {
+    background-color: beige;
+    min-height: 428px;
+}
+
+    .announcement h3 {
+        color: #e67e22;
+        font-weight: bold;
+        font-size: 26px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .announcement h4 {
+        color: #e67e22;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+
+
+
+/*********** Vertical Tab Design For math-Practice & Grades Pages ******************/
+.vertical-tabs-ul > .vertical-tabs-li {
+    background: #fff;
+    border: solid 1px #CBCBCB;
+    border-left: solid 2px #e67e22;
+    border-bottom: none !important;
+    background-color: #F9F9F9 !important;
+    border-right: none !important;
+    border-top: none !important;
+    border-radius: 5px 0 0 5px;
+}
+
+.vertical-tabs-li > a, .vertical-tabs-li > .active > a:hover {
+    background-color: #F9F9F9 !important;
+}
+
+.vertical-tabs-ul {
+    border-right: none !important;
+}
+
+.vertical-tabs-div {
+    background-color: #F9F9F9;
+    padding: 20px;
+    min-height: 440px;
+    border: 1px solid #DDDDDD;
+}
+
+
+.circle-count span {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    color: #444444;
+    font-weight: bold;
+    padding: 1px 6px;
+}
+
+
+.question-mark-text {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    color: #444444;
+    font-weight: bold;
+    padding: 1px 6px;
+}
+
+/*********** UserCerticate ******************/
+.thumb {
+    background-color: #CCC;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 1px solid #000;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+#contain {
+    background-size: contain;
+    -moz-background-size: contain;
+}
+
+#preview {
+    position: absolute;
+    border: 1px solid #ccc;
+    background: #333;
+    padding: 5px;
+    display: none;
+    color: #fff;
+}
+
+
+/***********************Why Us Page*******************************/
+
+.why-us ul li {
+    list-style: disc;
+}
+
+
+/***********************TopMenu Search*******************************/
+#searchcontainer {
+    float: left;
+    height: 20px;
+}
+
+    /* background: url(/content/images/search-white.png) no-repeat 9px 6px #fcfcfc;*/
+    /*font: bold 12px Arial,Helvetica,Sans-serif;*/
+    #searchcontainer input[type="text"] {
+        border: 1px solid #d1d1d1;
+        font: 12px Arial,Helvetica,Sans-serif;
+        color: #000;
+        max-width: 160px;
+        padding: 5px 8px 5px 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 6px;
+        border-radius: 8px;
+        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+        -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+        -webkit-transition: all 0.7s ease 0s;
+        -moz-transition: all 0.7s ease 0s;
+        -o-transition: all 0.7s ease 0s;
+        transition: all 0.7s ease 0s;
+    }
+
+
+
+.search-result-title {
+    color: #3333FF;
+    height: 1.2em;
+    font-size: 16px;
+    text-decoration: underline;
+    overflow: hidden;
+}
+
+.search-result-div {
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+    padding: 10px 0 10px 0;
+    border: 1px solid #fff;
+    margin-bottom: 0;
+}
+
+.search-result-url {
+    color: #349BB9;
+    text-align: left;
+    text-decoration: none;
+    padding-bottom: 2px;
+    overflow: hidden;
+    font-size: 13px;
+}
+
+.search-result-info {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-spacing: 0px;
+    vertical-align: top;
+}
+
+.search-summary {
+    color: #777777;
+    text-align: left;
+    font-size: 12px;
+    vertical-align: top;
+}
+
+.search-result-norecord {
+    color: #333333;
+    text-align: left;
+    font-size: 13px;
+    vertical-align: top;
+}
+
+.changepassword-textbox {
+    height: 50px;
+    width: 50% !important;
+}
+
+/*Footer */
+
+.divSubscriberMessage {
+    display: none;
+}
+
+.displayinline {
+    display: inline !important;
+}
+
+.form-txt-width{
+    width:70px !important;
+}
+
+
+.footer {
+    background: none repeat scroll 0 0 #292727;
+    color: #CCCCCC !important;
+    /*margin: 0;*/
+    padding: 10px 0 5px;
+}
+
+.headline {
+    color: white;
+    /*border-bottom: 1px dotted #E4E9F0;*/
+    display: block;
+    margin: 10px 0 15px !important;
+}
+
+.footer p {
+    color: #DADADA;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+}
+
+.footer p, .footer a {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1em;
+    color: #CCCCCC !important;
+}
+
+.footer a {
+    color: #999999;
+}
+
+footer input.btn[type="submit"] {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    margin-top: -8px !important;
+    margin-left: 2px !important;
+}
+
+.copyright {
+    background: none repeat scroll 0 0 #1C1C1C;
+    color: #999999;
+    font-size: 13px;
+    padding: 10px 0;
+}
+
+    .copyright a {
+        color: #72c02c;
+        transition: color 1s linear;
+    }
+
+        .footer a:hover, .copyright a:hover {
+            color: #72c02c;
+            text-decoration: underline;
+        }
+
+    .copyright p {
+        color: #72c02c;
+    }
+
+
+
+/*************************Navigation Bar Changes from default change from bootstrap*******************************/
+
+.navbar-nav > li > a {
+    padding-top: 13px !important;
+}
+
+.navbar-nav-submenu a {
+    color: Green !important;
+    font-size: 18px;
+}
+
+    .navbar-nav-submenu a:hover {
+        color: #3498db !important;
+    }
+
+.navbar-nav-submenu li a.active {
+    color: #3498db !important;
+}
+
+.breadcrumb {
+    margin-bottom: 10px !important;
+}
+
+
+#mainContainer {
+    min-height: 535px;
+}
+
+.form-radius {
+    border-radius: 0px;
+}
+
+.news-p {
+    font-size: .9em !important;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+a, a:focus, a:hover, a:active {
+    outline: 0 none !important;
+}
+
+.list-group-item.active,
+.list-group-item.active:hover,
+.list-group-item.active:focus {
+    text-shadow: none !important;
+    background-image: -webkit-linear-gradient(top, #428bca 0%, #3278b3 100%);
+    background-image: -o-linear-gradient(top, #428bca 0%, #3278b3 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#428bca), to(#3278b3));
+    background-image: linear-gradient(to bottom, #428bca 0%, #3278b3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff3278b3', GradientType=0);
+    background-repeat: repeat-x;
+    border: 1px solid #ddd !important;
+}
+
+
+.font_14 {
+    font-size: 14px;
+}
+
+.copyright {
+    font-size: 12px;
+    padding: 11px 0 7px;
+    background: #262626;
+    border-top: solid 1px #777;
+}
+
+    .copyright p {
+        color: #dadada;
+        margin-top: 12px;
+    }
+
+    .copyright a {
+        margin: 0 5px;
+        color: #72c02c;
+    }
+
+        .copyright a:hover {
+            color: #72c02c;
+            text-decoration: underline;
+        }
+
+        .copyright a img {
+            margin-top: 5px;
+        }
+
+
+.font-dashboard {
+    font: bold 1em Arial,Helvetica,sans-serif !important;
+}
+
+.padding-left-none {
+    padding-left: 0px !important;
+}
+
+.padding-left-30 {
+    padding-left: 30px !important;
+    padding-right: 0px !important;
+}
+
+blockquote p {
+    font-size: .9em !important;
+    font-weight: 400;
+}
+
+.margin-left-zero {
+    margin-left: 0px !important;
+}
+
+.height_40 {
+    height:40px;
+}
+
+.label-css{
+    font-weight:bold;
+    font-size:11px;
+    margin-top:10px;   
+}
+table.sortable thead {
+    background-color:#eee;
+    color:#666666;
+    font-weight: bold;
+    cursor: default;
+}
+
+.PageOpenTimer {
+    width:280px ; height: 90px; float: left;
+    margin-top:5px;
+}
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none !important;
+}
+
+
+/*.table {
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+
+.table th {
+    width:100px;
+    word-wrap: break-word;
+}*/
+
+.box-shadow-menu {
+  position: relative;
+  padding-left: 1.25em;
+}
+.box-shadow-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+  width: 2em;
+  height: 0.25em;
+  background: grey;
+  box-shadow: 
+    0 0.55em 0 0 grey,
+    0 1.1em 0 0 grey;
+}
+
+.extender-default .extender-toggle
+{
+    border-color:#ddd;
+}
+
+.extender-toggle {
+  position: relative;
+  float: left;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.extender-toggle:focus {
+  outline: 0;
+}
+.extender-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+.extender-toggle .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+.extender-default .extender-toggle:hover,
+.extender-default .extender-toggle:focus {
+  background-color: #ddd;
+}
+.extender-default .extender-toggle .icon-bar {
+  background-color: #888;
+}
+
+.btn-padding
+{
+    padding:0px !important;
+}
+
+input[type="radio"]:not(old) + label > span
+{
+    margin-left:0px !important;
+}
+
+/*math-practice page ul li color*/
+.text-color-white{
+    color:white !important;
+    font-weight:bold;
+    font-size:1.1em;
+}
+
+ .list-style {
+     color:black !important;
+    list-style-type: disc;
+    font-weight:bold;
+}
+
+h2.heading-mp {
+    font-size: 1.1em;
+    line-height: 16px;
+    text-align:left;
+}
+
+ul.blog-tags div
+{   
+    /*background: #f7f7f7 none repeat scroll 0 0;*/
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 3px 6px 0;
+    padding: 2px 7px;
+}
+
+.math-practice-text{
+    text-align:justify;
+}

@@ -1,0 +1,75 @@
+﻿@{
+    ViewBag.Title = "Error404 Page - Opps!!! Page Not Found";
+    ViewBag.MetaDescription = "Error404 Page - Opps!!! Page Not Found";
+}
+
+<div class="container">
+    <div class="row page-404">
+        <div class="col-xs-6 col-sm-6 col-md-6">
+            <p>
+                <i>
+                    @if (!string.IsNullOrWhiteSpace(@ViewBag.ErrorStatus))
+                    {
+                        @ViewBag.ErrorStatus
+                    }
+                </i>
+            </p>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6">
+            <div class="page-404-Span">
+                <span>Opps !!!</span>
+                <span>@if (!string.IsNullOrWhiteSpace(@ViewBag.ErrorMessage))
+                    {
+                        @ViewBag.ErrorMessage
+                    }</span>  
+                @if (!string.IsNullOrWhiteSpace(@ViewBag.returnUrl))
+                {
+                    <input type="hidden" id="hdnReturnUrl" value="@ViewBag.returnUrl" />
+                }
+                </div>
+            <div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            @Html.Partial("~/views/shared/_errorpartial.cshtml")
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            @Html.Partial("~/views/home/_errorsearchpagepartial.cshtml")
+        </div>
+    </div>
+</div>
+
+<style>
+    .page-404 {
+        /*margin: 50px 0 40px 0;*/
+    }
+
+        .page-404 p i {
+            font-style: normal;
+            text-shadow: 5px 0 10px;
+        }
+
+        .page-404 p {
+            color: #777777;
+            font-size: 100px;
+            line-height: 125px;
+            /*text-align: right;*/
+        }
+
+    .page-404-Span {
+        margin-top: 50px;
+    }
+
+    .page-404 span {
+        display: block;
+        font-size: 32px;
+        color: #777777;
+        position: relative;
+        line-height: 40px;
+        /*text-align: center;*/
+    }
+</style>

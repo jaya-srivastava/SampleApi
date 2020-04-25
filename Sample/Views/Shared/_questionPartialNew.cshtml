@@ -1,0 +1,121 @@
+﻿@using iPractice
+
+<div class="">
+    @*<div id="star" class="rating_box"></div>*@ 
+    <div class="row  ProgressCompleted">
+        <br />
+        <h3>Congratulation @(Request.IsAuthenticated ? User.Identity.Name : "User")! You have Completed this skill set Successfully!!</h3>
+        <br />
+
+    </div>
+
+    <div class="row ProgressCompleted GotoCertificate">
+        <div class=" alert alert-success fade in">
+            <strong>Please click at @Html.ActionLink("Certificate", "UserCertificates", "Certificate") to view your Certificates.<br />
+            </strong>
+        </div>
+    </div>
+    <div class="row ProgressCompletedSignUp">
+        <div class="alert alert-danger fade in alert-dismissable">
+            <button class="close" aria-hidden="true" data-dismiss="alert" type="button">×</button>
+            <strong>Please Login/Register with us to Track your Progress. It needs just 30 seconds. </strong>
+        </div>
+        @Html.Partial("~/Views/Membership/_loginCommonPartial.cshtml", new iPractice.ViewModel.LoginModel() { ReturnUrl = "" })
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12 col-md-12">
+        <div id="aContainer">
+            <div class="question_content">
+                <div data-bind="with: CurrentQuestion">
+                    <div class="que_bg thoughtbot">
+                        <div class="signup_line wrapText">
+                            <div data-bind="if: (!IsValidOrEmpty(FormatType))">
+                                <span class="signup_line1" data-bind="html: TextFormat(FormatType, QuestionFormatJson)"></span>
+                            </div>
+                            <div data-bind="if: (IsValidOrEmpty(FormatType))">
+                                <strong>Question: </strong><span class="signup_line1" data-bind="html: QuestionText"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-bind="if: (Hint != null)">
+                        <div class="HintBox">
+                            <strong>Hint: </strong><span id="signup_line12" data-bind="text: Hint"></span>
+                        </div>
+                    </div>
+                    <div class="editor-field que_div row">
+                        <!-- editor-field que_div -->
+                        <div class="col-sm-5 col-md-5">
+                            <div class="que_ans que_option que_option_margin">
+                                <!-- que_ans que_option -->
+                                <div id="questions_radio">
+                                    <p class="margin10" data-bind="visible: (Opt1 != null && Opt1.length > 0)">
+                                        <label class="radio">
+                                            <input id="A" type="radio" name="opt" data-bind="checked: selectedAnswer, value: Opt1" />
+                                            <span data-bind="html: Opt1"></span>
+                                        </label>
+                                    </p>
+                                    <p class="margin10" data-bind="visible: (Opt2 != null && Opt2.length > 0)">
+                                        <label class="radio">
+                                            <input id="B" type="radio" name="opt" data-bind="checked: selectedAnswer, value: Opt2" />
+                                            <span data-bind="html: Opt2"></span>
+                                        </label>
+                                    </p>
+                                    <p class="margin10" data-bind="visible: (Opt3 != null && Opt3.length > 0)">
+                                        <label class="radio">
+                                            <input id="C" type="radio" name="opt" data-bind="checked: selectedAnswer, value: Opt3" />
+                                            <span data-bind="html: Opt3"></span>
+                                        </label>
+                                    </p>
+                                    <p class="margin10" data-bind="visible: (Opt4 != null && Opt4.length > 0)">
+                                        <label class="radio">
+                                            <input id="D" type="radio" name="opt" data-bind="checked: selectedAnswer, value: Opt4" />
+                                            <span data-bind="html: Opt4"></span>
+                                        </label>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="marginAnswerText">
+                                <div data-bind="visible: (Opt1 == null)">
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12">
+                                            <input id="txtAnswer" class="form-control" type="text" name="opt" autocapitalize="off" autocorrect="off" data-bind="value: selectedAnswer" placeholder="enter answer" />
+                                        </div>
+                                        @*     <div class="col-md-8 col-sm-8">
+                                        </div>*@
+                                    </div>
+                                    <br />
+                                    <br />
+                                </div>
+                            </div>
+                            <div class="btns">
+                                <p class="span6">
+                                    <button type="submit" id="Submit" class="btn btn-success" data-bind="click: $parent.nextQuestion">Submit Answer</button>
+                                    <button type="submit" id="CompleteProgress" class="btn btn-success" data-bind="click: $parent.CompleteProgress">Complete</button>
+                                    <span id="ErrorMessage"></span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-7 col-md-7">
+                            <div class="row">
+                                <div class="col-sm-8 col-md-8">
+                                    <a href="#" class="btn-u btn-u-xs rounded btn-u-brown btnShowCanvas" onclick="ShowCanvas();">Show Scrapbook</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="#tools_sketch" class="hide showMarker" onclick="EraseSketch();" data-tool="marker"><i class="fa fa-pencil-square-o"></i>&nbsp;Marker</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="#tools_sketch" class="hide eraseSketch" onclick="ShowMarker();" data-tool="eraser"><i class="fa fa-eraser"></i>&nbsp;Eraser</a>
+                                </div>
+                                <div class="row">
+                                    <div id="divCanvas" class="col-sm-8 col-md-8 hide">
+                                        <canvas id="tools_sketch" width="560" height="500" class="canvas-background"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

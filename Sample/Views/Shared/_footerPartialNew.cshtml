@@ -1,0 +1,117 @@
+﻿@using DevTrends.MvcDonutCaching;
+@model @Sample.Models.DTO.FeedbackDto
+@{
+    Model.NotificationType = @iPractice.Helpers.Enums.NotificationType.Feedback.ToString();
+}
+<div>
+    <div class="container">
+        <div class="row">
+            <div><br /></div>            <div><br /></div>            <div><br /></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-md-3 col-newsletter">
+                <div class="headline"><h4>Monthly Newsletter</h4></div>
+                <p class="news-p">Subscribe to our newsletter and be the first to know about all updates!</p>
+                @using (Ajax.BeginForm("SubscribeMe", "Membership", FormMethod.Post, new AjaxOptions { OnBegin = "checkSubscriberEmail", OnSuccess = "ShowSubscriberEmail" }))
+                { 
+                        <div class="input-group">
+                            @Html.TextBoxFor(m => m.Email, new { id = "txtFooterEmail", @placeholder = "Email Address", @class = "form-control" }) 
+                            @Html.HiddenFor(m=>m.NotificationType)                    
+                            <span class="input-group-btn">
+                                <button type="submit" class="btn-u">Subscribe</button>
+                            </span>
+                        </div>
+                        <div class="divSubscriberMessage"></div>                   
+                }
+            </div>
+            <div class="col-sm-3 col-md-3 col-footer">                
+                <!-- About -->
+                <div class="headline"><h4>iPracticeMath</h4><br /></div>                
+                <p>@Html.ActionLink("Home", "Index", "Home")</p>
+                @*<p>@Html.ActionLink("Basic Math", "BasicMath", "Learn")</p>*@
+                <p>@Html.ActionLink("Learn", "Index", "Learn")</p>
+                <p>@Html.ActionLink("Worksheets", "Index", "Sheet")</p>
+                <p>@Html.ActionLink("Grades", "Index", "Grade")</p> 
+		<p>@Html.ActionLink("Site Map", "Sitemap", "Home")</p>               
+            </div>
+
+            <div class="col-sm-3 col-md-3 col-footer">     
+                <div class="headline"><h4>About Us</h4><br /></div>
+                <p>@Html.ActionLink("Why Us", "WhyUs", "Home")</p>
+                <p><a href="@Url.Action( "ContactUs", "Home")" onclick="trackEventByAnalystics('ContactUs', 'ContactUs')" class="bornone">Contact Us</a></p>
+                <p>@Html.ActionLink("FAQs", "FAQs", "Home")</p>
+                <p>@Html.ActionLink("Terms of Use", "Legal", "Home", null, new { @class = "bornone" })</p>
+                <p><a target="_blank" href="http://blog.ipracticemath.com">Blog</a></p>
+            </div>
+            <div class="col-sm-3 col-md-3 col-footer">     
+                <div class="headline"><h3>Membership</h3><br /></div>
+                <p> 
+                     @Html.ActionLink("Register", "Register", "Membership", null, null)
+                 @*   @Html.ActionLink("Register", "Register", "Membership")*@
+                </p>
+                <p>
+                    @Html.ActionLink("Sign In", "SignIn", "Membership", null, new { @class = "bornone" })</p>
+                <div class="headline"><h4>Follow Us</h4><br /></div>
+                <span class="social float-left"><a data-original-title="Facebook"  rel="nofollow" target="_blank" href="http://www.facebook.com/ipracticemath"><i class="fa fa-facebook-square color-blue"></i></a>&nbsp;&nbsp;</span>
+                <span class="social float-left"><a data-original-title="Twitter"  rel="nofollow" target="_blank" href="https://twitter.com/iPracticeMath"><i class="fa  fa-twitter-square color-twitter"></i></a>&nbsp;&nbsp;</span>
+                <span class="social float-left"><a data-original-title="Google+"  rel="nofollow publisher" target="_blank" href="https://plus.google.com/+Ipracticemath/posts"><i class="fa  fa-google-plus-square color-red"></i></a>&nbsp;&nbsp;</span>
+                <span class="social float-left"><a data-original-title="linked In"  rel="nofollow" target="_blank" href="http://www.linkedin.com/company/ipracticemath"><i class="fa fa-linkedin-square color-blue"></i></a></span>
+            </div>            
+        </div>
+    </div>
+</div>
+
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 col-md-7"> 
+            </div>
+            <div class="col-sm-5 col-md-5">
+                <p>  @Html.Hidden("date", DateTime.Now.ToUniversalTime())
+                    © @DateTime.Now.ToUniversalTime().Year @(Html.ActionLink("iPracticeMath", "Index", "Home")) | All Rights Reserved | @Html.ActionLink("Terms of Use.", "Legal", "Home")
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 col-md-8">  </div>
+            <div class="col-sm-4 col-md-4">  </div>
+        </div>
+    </div>
+</div>
+
+
+@*@Html.Action("MiniProfiler", "Home", excludeFromParentCache: true)*@
+@*@MiniProfiler.RenderIncludes()*@
+
+@Styles.Render("~/fonts")
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" property='stylesheet' type="text/css" media="all" />
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script type="text/javascript">
+    if (!window.console) { var console = {}; }    if (!console.log) { console.log = function () { }; }
+</script>
+<!-- Quantcast Tag -->
+<script type="text/javascript">
+    var _qevents = _qevents || [];
+    (function () {
+        var elem = document.createElement('script');
+        elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+        elem.async = true; elem.type = "text/javascript";
+        var scpt = document.getElementsByTagName('script')[0]; scpt.parentNode.insertBefore(elem, scpt);
+    })();
+    _qevents.push({ qacct: "p-EKyBr-HHw6bsr" });
+</script>
+<noscript>
+    <div style="display: none;">
+        <img src="//pixel.quantserve.com/pixel/p-EKyBr-HHw6bsr.gif" border="0" height="1" width="1" alt="Quantcast" />
+    </div>
+</noscript>
+<!-- End Quantcast tag -->
